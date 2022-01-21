@@ -1,0 +1,296 @@
+C51 COMPILER V9.59.0.0   TM1638_DRIVE                                                      12/27/2021 18:41:58 PAGE 1   
+
+
+C51 COMPILER V9.59.0.0, COMPILATION OF MODULE TM1638_DRIVE
+OBJECT MODULE PLACED IN TM1638_drive.OBJ
+COMPILER INVOKED BY: D:\Keil_v5\C51\BIN\C51.EXE TM1638_drive.c OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND
+
+line level    source
+
+   1          /*********************************************************************
+   2           *
+   3           *                           TM1638_drive.c
+   4           *
+   5           *********************************************************************
+   6           * Ãè    Êö: TM1638Çý¶¯º¯Êý¼¯
+   7           * ¿ª·¢Æ½Ì¨: KEIL C51
+   8           * ÌÔ±¦ÍøÖ·: https://shop472896494.taobao.com                    
+   9           * ×÷Õß                 ÈÕÆÚ                    ×¢ÊÍ
+  10           *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  11           * ·ÉÔÆ´´Òâµç×Ó         18/10/26                Ô­Ê¼ÎÄ¼þ
+  12           *
+  13           ********************************************************************/
+  14          
+  15          #include <TM1638_drive.h>
+  16          
+  17           //¹²ÒõÊýÂë¹Ü¶ÎÂë
+  18          unsigned char code Num_tab[]={0x3F,0x06,0x5B,0x4F,0x66,0x6D,0x7D,0x07,
+  19                                     0x7F,0x6F,0x77,0x7C,0x39,0x5E,0x79,0x71};
+  20          
+  21          //TM1638µÍ8¶ÎÎ»Âë  ¡¾SEG1-SEG8¡¿
+  22          unsigned char code WeiL_tab[]={0xce,0xcc,0xca,0xc8,0xc6,0xc4,0xc2,0xc0};
+  23          
+  24          //TM1638¸ß2¶ÎÎ»Âë  ¡¾SEG9-SEG10¡¿
+  25          unsigned char code WeiH_tab[]={0xcf,0xcd,0xcb,0xc9,0xc7,0xc5,0xc3,0xc1};
+  26          
+  27          void TM1638_W_DATA(unsigned char        DATA)                   //Ð´Êý¾Ýº¯Êý
+  28          {
+  29   1              unsigned char i;
+  30   1              for(i=0;i<8;i++)
+  31   1              {
+  32   2                      CLK=0;
+  33   2                      if(DATA&0X01)
+  34   2                              DIO=1;
+  35   2                      else
+  36   2                              DIO=0;
+  37   2                      DATA>>=1;
+  38   2                      CLK=1;
+  39   2              }
+  40   1      }
+  41          
+  42          void TM1638_W_CMD(unsigned char cmd)            //Ð´ÃüÁîº¯Êý
+  43          {
+  44   1              STB=0;
+  45   1              TM1638_W_DATA(cmd);
+  46   1              STB=1;
+  47   1      }
+  48          
+  49          void Write_DATA(unsigned char add,unsigned char DATA)           //Ö¸¶¨µØÖ·Ð´ÈëÊý¾Ý
+  50          {
+  51   1              TM1638_W_CMD(0x44);
+  52   1              STB=0;
+  53   1              TM1638_W_DATA(add);
+  54   1              TM1638_W_DATA(DATA);
+  55   1              STB=1;
+C51 COMPILER V9.59.0.0   TM1638_DRIVE                                                      12/27/2021 18:41:58 PAGE 2   
+
+  56   1      }
+  57          
+  58          unsigned char TM1638_Read(void)                                 //¶ÁÊý¾Ýº¯Êý
+  59          {
+  60   1              unsigned char i;
+  61   1              unsigned char temp=0;
+  62   1              DIO=1;  //ÉèÖÃÎªÊäÈë
+  63   1              for(i=0;i<8;i++)
+  64   1              {
+  65   2                      temp>>=1;
+  66   2                      
+  67   2                      CLK=0;
+  68   2                      CLK=1;                                                     //CLKÉÏÉýÑØ¶ÁÊý¾Ý²ÅÓÐÐ§
+  69   2      
+  70   2                      if(DIO)
+  71   2                              temp|=0x80;
+  72   2              }
+  73   1              return temp;
+  74   1      }
+  75          
+  76          unsigned char Read_Onekey(void)            //¶ÁÒ»ÏÂ°´¼üÖµ£¬²»Ö§³Ö×éºÏ¼ü
+  77          {
+  78   1              unsigned char key_val[4],i,key=0;
+  79   1              
+  80   1              STB=0;
+  81   1              
+  82   1              TM1638_W_DATA(0x42);                       //¶Á¼üÉ¨Êý¾ÝÃüÁî  ×¢Òâ£ºÕâÀïÒªÏÈ¶ÁÍê4×Ö½Ú¼üÖµ²ÅÄÜ½«STBÖÃ1£¬·ñÔò¶Á¼üÖµÎÞÐ
+             -§
+  83   1              
+  84   1              for(i=0;i<4;i++)                
+  85   1                      key_val[i]=TM1638_Read();
+  86   1              
+  87   1              STB=1;                                             //4¸ö×Ö½ÚÊý¾ÝºÏ³ÉÒ»¸ö×Ö½Ú
+  88   1      
+  89   1      
+  90   1              if(key_val[0]!=0)        //°´¼üÔÚKS1»òKS2
+  91   1              {
+  92   2                      switch(key_val[0])
+  93   2                      {
+  94   3                              case 1:
+  95   3                                      key=K3S1;
+  96   3                              break;
+  97   3                              
+  98   3                              case 2:
+  99   3                                      key=K2S1;
+ 100   3                              break;
+ 101   3                              
+ 102   3                              case 4:
+ 103   3                                      key=K1S1;
+ 104   3                              break;
+ 105   3      
+ 106   3                              case 16:
+ 107   3                                      key=K3S2;
+ 108   3                              break;
+ 109   3                              
+ 110   3                              case 32:
+ 111   3                                      key=K2S2;
+ 112   3                              break;
+ 113   3                              
+ 114   3                              case 64:
+ 115   3                                      key=K1S2;
+ 116   3                              break;
+C51 COMPILER V9.59.0.0   TM1638_DRIVE                                                      12/27/2021 18:41:58 PAGE 3   
+
+ 117   3                      }
+ 118   2              }
+ 119   1              else if(key_val[1]!=0)        //°´¼üÔÚKS3»òKS4
+ 120   1              {
+ 121   2                      switch(key_val[1])
+ 122   2                      {
+ 123   3                              case 1:
+ 124   3                                      key=K3S3;
+ 125   3                              break;
+ 126   3                              
+ 127   3                              case 2:
+ 128   3                                      key=K2S3;
+ 129   3                              break;
+ 130   3                              
+ 131   3                              case 4:
+ 132   3                                      key=K1S3;
+ 133   3                              break;
+ 134   3      
+ 135   3                              case 16:
+ 136   3                                      key=K3S4;
+ 137   3                              break;
+ 138   3                              
+ 139   3                              case 32:
+ 140   3                                      key=K2S4;
+ 141   3                              break;
+ 142   3                              
+ 143   3                              case 64:
+ 144   3                                      key=K1S4;
+ 145   3                              break;
+ 146   3                      }
+ 147   2              }
+ 148   1              else if(key_val[2]!=0)        //°´¼üÔÚKS5»òKS6
+ 149   1              {
+ 150   2                      switch(key_val[2])
+ 151   2                      {
+ 152   3                              case 1:
+ 153   3                                      key=K3S5;
+ 154   3                              break;
+ 155   3                              
+ 156   3                              case 2:
+ 157   3                                      key=K2S5;
+ 158   3                              break;
+ 159   3                              
+ 160   3                              case 4:
+ 161   3                                      key=K1S5;
+ 162   3                              break;
+ 163   3      
+ 164   3                              case 16:
+ 165   3                                      key=K3S6;
+ 166   3                              break;
+ 167   3                              
+ 168   3                              case 32:
+ 169   3                                      key=K2S6;
+ 170   3                              break;
+ 171   3                              
+ 172   3                              case 64:
+ 173   3                                      key=K1S6;
+ 174   3                              break;
+ 175   3                      }
+ 176   2              }
+ 177   1              else if(key_val[3]!=0)        //°´¼üÔÚKS7»òKS8
+ 178   1              {
+C51 COMPILER V9.59.0.0   TM1638_DRIVE                                                      12/27/2021 18:41:58 PAGE 4   
+
+ 179   2                      switch(key_val[3])
+ 180   2                      {
+ 181   3                              case 1:
+ 182   3                                      key=K3S7;
+ 183   3                              break;
+ 184   3                              
+ 185   3                              case 2:
+ 186   3                                      key=K2S7;
+ 187   3                              break;
+ 188   3                              
+ 189   3                              case 4:
+ 190   3                                      key=K1S7;
+ 191   3                              break;
+ 192   3      
+ 193   3                              case 16:
+ 194   3                                      key=K3S8;
+ 195   3                              break;
+ 196   3                              
+ 197   3                              case 32:
+ 198   3                                      key=K2S8;
+ 199   3                              break;
+ 200   3                              
+ 201   3                              case 64:
+ 202   3                                      key=K1S8;
+ 203   3                              break;
+ 204   3                      }
+ 205   2              }
+ 206   1              
+ 207   1              return key;
+ 208   1      
+ 209   1      }
+ 210          
+ 211          void WriteSEG9_LED(unsigned char sta)                                   //¿ØÖÆÈ«²¿LEDº¯Êý£¬LED_flag±íÊ¾¸÷¸öLED×´Ì¬
+ 212          {
+ 213   1              unsigned char i;
+ 214   1              for(i=0;i<8;i++)
+ 215   1              {
+ 216   2                      if(sta&(1<<i))
+ 217   2                              Write_DATA(WeiH_tab[i],1);
+ 218   2                      else
+ 219   2                              Write_DATA(WeiH_tab[i],0);
+ 220   2              }
+ 221   1      }
+ 222          
+ 223          void WriteSEG10_LED(unsigned char sta)                                  //¿ØÖÆÈ«²¿LEDº¯Êý£¬LED_flag±íÊ¾¸÷¸öLED×´Ì¬
+ 224          {
+ 225   1              unsigned char i;
+ 226   1              for(i=0;i<8;i++)
+ 227   1              {
+ 228   2                      if(sta&(1<<i))
+ 229   2                              Write_DATA(WeiH_tab[i],2);
+ 230   2                      else
+ 231   2                              Write_DATA(WeiH_tab[i],0);
+ 232   2              }
+ 233   1      }
+ 234          
+ 235          void Write_LED(unsigned char sta9,unsigned char sta10)                                  //¿ØÖÆÈ«²¿LEDº¯Êý£¬LED_flag±íÊ¾¸÷¸öLED×´Ì¬
+ 236          {
+ 237   1              // 0b 1 0 0 0 0 0 0 0
+ 238   1              // 0b 0 1 1 0 0 0 0 0 
+ 239   1      
+ 240   1              Write_DATA(WeiH_tab[7],((sta10&0x80)>>6)|((sta9&0x80)>>7));
+C51 COMPILER V9.59.0.0   TM1638_DRIVE                                                      12/27/2021 18:41:58 PAGE 5   
+
+ 241   1              Write_DATA(WeiH_tab[6],((sta10&0x40)>>5)|((sta9&0x40)>>6));
+ 242   1              Write_DATA(WeiH_tab[5],((sta10&0x20)>>4)|((sta9&0x20)>>5));
+ 243   1              Write_DATA(WeiH_tab[4],((sta10&0x10)>>3)|((sta9&0x10)>>4));
+ 244   1              Write_DATA(WeiH_tab[3],((sta10&0x08)>>2)|((sta9&0x08)>>3));
+ 245   1              Write_DATA(WeiH_tab[2],((sta10&0x04)>>1)|((sta9&0x04)>>2));
+ 246   1              Write_DATA(WeiH_tab[1],(sta10&0x02)|((sta9&0x02)>>1));
+ 247   1              Write_DATA(WeiH_tab[0],((sta10&0x01)<<1)|(sta9&0x01));
+ 248   1      
+ 249   1      }
+ 250          
+ 251          //TM1638³õÊ¼»¯º¯Êý
+ 252          void init_TM1638(void)
+ 253          {
+ 254   1              unsigned char i;
+ 255   1              TM1638_W_CMD(0x89);       //ÁÁ¶È (0x88-0x8f)8¼¶ÁÁ¶È¿Éµ÷
+ 256   1              TM1638_W_CMD(0x40);       //²ÉÓÃµØÖ·×Ô¶¯¼Ó1
+ 257   1              STB=0;                     //
+ 258   1              TM1638_W_DATA(0xc0);    //ÉèÖÃÆðÊ¼µØÖ·
+ 259   1      
+ 260   1              for(i=0;i<16;i++)          //´«ËÍ16¸ö×Ö½ÚµÄÊý¾Ý
+ 261   1                      TM1638_W_DATA(0x00);
+ 262   1              STB=1;
+ 263   1      }
+ 264          
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    719    ----
+   CONSTANT SIZE    =     32    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----       4
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

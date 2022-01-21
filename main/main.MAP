@@ -1,0 +1,533 @@
+
+连接器　版本8.7.7.211123
+Input Object File: E:\demo_20211221\main\MAIN.OBJ
+Input Object File: E:\demo_20211221\main\STARTUP1_L.OBJ
+Input Object File: E:\demo_20211221\main\CLOCK_RUN.OBJ
+Input Object File: E:\demo_20211221\main\DEFINE.OBJ
+Input Object File: E:\demo_20211221\main\EEPROM.OBJ
+Input Object File: E:\demo_20211221\main\INIT_HT66F018.OBJ
+Input Object File: E:\demo_20211221\main\KEYSCAN.OBJ
+Input Object File: E:\demo_20211221\main\LCD.OBJ
+Input Object File: E:\demo_20211221\main\LED.OBJ
+Input Object File: E:\demo_20211221\main\SOUND_ISD1820.OBJ
+Input Object File: E:\demo_20211221\main\VOLTAGE.OBJ
+Input Object File: E:\demo_20211221\main\MOTOR.OBJ
+Input Object File: E:\demo_20211221\main\FEED.OBJ
+
+Input Library File: E:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB
+Input Library File: E:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\v3_tabrd_mrsc.lib
+
+
+     Bank    Start     End      Length     Class    AvgIns    Name
+     00h     0000h     0000h    0001h      CODE               @code (E:\demo_20211221\main\MAIN.OBJ)
+     00h     0001h     0001h    0001h      CODE               _pwr_task (E:\demo_20211221\main\LED.OBJ)
+     00h     0002h     0002h    0001h      CODE               _sound_play (E:\demo_20211221\main\SOUND_ISD1820.OBJ)
+     00h     0004h     0007h    0004h      CODE               @Int0_code (E:\demo_20211221\main\MAIN.OBJ)
+     00h     0008h     000bh    0004h      CODE               _rtc_init (E:\demo_20211221\main\CLOCK_RUN.OBJ)
+     00h     000ch     000fh    0004h      CODE               @timer0_code (E:\demo_20211221\main\MAIN.OBJ)
+     00h     0010h     0013h    0004h      CODE               @timer1_code (E:\demo_20211221\main\MAIN.OBJ)
+     00h     0014h     001ah    0007h      CODE               _builtin_holtek_dtinf (E:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     001bh     001bh    0001h      CODE               _rtc_lcd (E:\demo_20211221\main\LCD.OBJ)
+     00h     001ch     001fh    0004h      CODE               @tb0_code (E:\demo_20211221\main\MAIN.OBJ)
+     00h     0020h     0023h    0004h      CODE               @tb1_code (E:\demo_20211221\main\MAIN.OBJ)
+     00h     0024h     0027h    0004h      CODE               @Int1_code (E:\demo_20211221\main\MAIN.OBJ)
+     00h     0028h     0048h    0021h      CODE               @start (E:\demo_20211221\main\MAIN.OBJ)
+     00h     0049h     0058h    0010h      CODE               @ROMDATA_BASE (E:\demo_20211221\main\STARTUP1_L.OBJ)
+     00h     0059h     0066h    000eh      CODE               itodaz (E:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     0067h     00a4h    003eh      CODE               @builtin_holtek_dtsubadd (E:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     00a5h     00e4h    0040h      CODE               _builtin_holtek_dtmul (E:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     00e5h     010fh    002bh      CODE               @builtin_holtek_ftol (E:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     0110h     0127h    0018h      CODE               @builtin_holtek_dtdecode (E:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     0128h     015bh    0034h      CODE               _builtin_holtek_dtnorm (E:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     015ch     0167h    000ch      CODE               @builtin_holtek_ftdecode (E:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     0168h     0245h    00deh      CODE               _main (E:\demo_20211221\main\MAIN.OBJ)
+     00h     0246h     0288h    0043h      CODE               _timer0 (E:\demo_20211221\main\MAIN.OBJ)
+     00h     0289h     028eh    0006h      CODE               _timer1 (E:\demo_20211221\main\MAIN.OBJ)
+     00h     028fh     02aah    001ch      CODE               _tb0 (E:\demo_20211221\main\MAIN.OBJ)
+     00h     02abh     02b0h    0006h      CODE               _tb1 (E:\demo_20211221\main\MAIN.OBJ)
+     00h     02b1h     02b5h    0005h      CODE               _Int0 (E:\demo_20211221\main\MAIN.OBJ)
+     00h     02b6h     02bah    0005h      CODE               _Int1 (E:\demo_20211221\main\MAIN.OBJ)
+     00h     02bbh     02d1h    0017h      CODE               _Clock_Run (E:\demo_20211221\main\CLOCK_RUN.OBJ)
+     00h     02d2h     02d8h    0007h      CODE               _glint_task (E:\demo_20211221\main\CLOCK_RUN.OBJ)
+     00h     02d9h     02e6h    000eh      CODE               _timeout_task (E:\demo_20211221\main\CLOCK_RUN.OBJ)
+     00h     02e7h     02efh    0009h      CODE               _time_save (E:\demo_20211221\main\CLOCK_RUN.OBJ)
+     00h     02f0h     0305h    0016h      CODE               _e2prom_write (E:\demo_20211221\main\EEPROM.OBJ)
+     00h     0306h     031dh    0018h      CODE               _e2prom_read (E:\demo_20211221\main\EEPROM.OBJ)
+     00h     031eh     032ch    000fh      CODE               _e2prom_init (E:\demo_20211221\main\EEPROM.OBJ)
+     00h     032dh     033ch    0010h      CODE               _Delay_ms (E:\demo_20211221\main\INIT_HT66F018.OBJ)
+     00h     033dh     0348h    000ch      CODE               _sys_init (E:\demo_20211221\main\INIT_HT66F018.OBJ)
+     00h     0349h     036ah    0022h      CODE               _gpio_init (E:\demo_20211221\main\INIT_HT66F018.OBJ)
+     00h     036bh     037ch    0012h      CODE               _timer_init (E:\demo_20211221\main\INIT_HT66F018.OBJ)
+     00h     037dh     0390h    0014h      CODE               _isr_init (E:\demo_20211221\main\INIT_HT66F018.OBJ)
+     00h     0391h     0398h    0008h      CODE               _adc_init (E:\demo_20211221\main\INIT_HT66F018.OBJ)
+     00h     0399h     0709h    0371h      CODE               _Key_Scan (E:\demo_20211221\main\KEYSCAN.OBJ)
+     00h     070ah     0714h    000bh      CODE               _error_task (E:\demo_20211221\main\LED.OBJ)
+     00h     0715h     0728h    0014h      CODE               _sound_rec (E:\demo_20211221\main\SOUND_ISD1820.OBJ)
+     00h     0729h     0749h    0021h      CODE               _GetAdResult (E:\demo_20211221\main\VOLTAGE.OBJ)
+     00h     074ah     07aah    0061h      CODE               _battery_detect (E:\demo_20211221\main\VOLTAGE.OBJ)
+     00h     07abh     0805h    005bh      CODE               _ADC_KeySample (E:\demo_20211221\main\VOLTAGE.OBJ)
+     00h     0806h     0851h    004ch      CODE               _motor_run (E:\demo_20211221\main\MOTOR.OBJ)
+     00h     0852h     08a9h    0058h      CODE               _motor (E:\demo_20211221\main\MOTOR.OBJ)
+     00h     08aah     08fdh    0054h      CODE               _feed_run (E:\demo_20211221\main\FEED.OBJ)
+     00h     08feh     0963h    0066h      CODE               _feed_scan (E:\demo_20211221\main\FEED.OBJ)
+     00h     0964h     0971h    000eh      CODE               _builtin_holtek_delay_isr00 (E:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     0972h     0976h    0005h      CODE               _CROM2PROM (CROM2PROM)
+     00h     00a0h     00a3h    0004h      DATA     3.5       @HCCINIT (E:\demo_20211221\main\MAIN.OBJ)
+     00h     00a4h     00a9h    0006h      DATA     8.1667    @HCCINIT (E:\demo_20211221\main\CLOCK_RUN.OBJ)
+     00h     00aah     00ach    0003h      DATA     6.6667    @HCCINIT0 (E:\demo_20211221\main\CLOCK_RUN.OBJ)
+     00h     00adh     00afh    0003h      DATA     2.6667    @HCCINIT (E:\demo_20211221\main\KEYSCAN.OBJ)
+     00h     00b0h     00b3h    0004h      DATA     2         @HCCINIT (E:\demo_20211221\main\LED.OBJ)
+     00h     00b4h     00b5h    0002h      DATA     0.5       @HCCINIT (E:\demo_20211221\main\SOUND_ISD1820.OBJ)
+     00h     00b6h     00b6h    0001h      DATA     1         @HCCINIT (E:\demo_20211221\main\VOLTAGE.OBJ)
+     00h     00b7h     00b7h    0001h      DATA     4         @HCCINIT (E:\demo_20211221\main\FEED.OBJ)
+     00h     00b8h     00b8h    0001h      DATA     94        @data_ra (E:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     00b9h     00b9h    0001h      DATA     47        @data_rb (E:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     00bah     00bah    0001h      DATA     47        @data_rc (E:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     00bbh     00bbh    0001h      DATA     56        @data_rd (E:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     00bch     00bch    0001h      DATA     40        @data_re (E:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     00bdh     00bdh    0001h      DATA     30        @data_rf (E:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     00beh     00beh    0001h      DATA     30        @data_rg (E:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     00bfh     00bfh    0001h      DATA     16        @data_rh (E:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     00c0h     00c5h    0006h      DATA     52.833    ftdata1 (E:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     00c6h     00c8h    0003h      DATA     52        dtdata (E:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     00c9h     00cfh    0007h      DATA     20.714    ftdata2 (E:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     00d0h     00d0h    0001h      DATA     2         @data_r10c (isr:ra~rh)
+     00h     00d1h     00d1h    0001h      DATA     2         @data_r20c (isr:ra~rh)
+     00h     00d2h     00d2h    0001h      DATA     2         @data_r30c (isr:ra~rh)
+     00h     00d3h     00d3h    0001h      DATA     2         @data_r40c (isr:ra~rh)
+     00h     00d4h     00d4h    0001h      DATA     2         @data_r50c (isr:ra~rh)
+     00h     00d5h     00d5h    0001h      DATA     2         @data_r60c (isr:ra~rh)
+     00h     00d6h     00d6h    0001h      DATA     2         @data_r70c (isr:ra~rh)
+     00h     00d7h     00d7h    0001h      DATA     4         @data_ra0c (isr:ra~rh)
+     00h     00d8h     00d8h    0001h      DATA     2         @data_r110 (isr:ra~rh)
+     00h     00d9h     00d9h    0001h      DATA     2         @data_r210 (isr:ra~rh)
+     00h     00dah     00dah    0001h      DATA     2         @data_r11c (isr:ra~rh)
+     00h     00dbh     00dbh    0001h      DATA     2         @data_r21c (isr:ra~rh)
+     00h     00dch     00dch    0001h      DATA     2         @data_r31c (isr:ra~rh)
+     00h     00ddh     00ddh    0001h      DATA     2         @data_r41c (isr:ra~rh)
+     00h     00deh     00deh    0001h      DATA     2         @data_r51c (isr:ra~rh)
+     00h     00dfh     00dfh    0001h      DATA     2         @data_r61c (isr:ra~rh)
+     00h     00e0h     00e0h    0001h      DATA     2         @data_r71c (isr:ra~rh)
+     00h     00e1h     00e1h    0001h      DATA     2         @data_r120 (isr:ra~rh)
+     00h     00e2h     00e2h    0001h      DATA     2         @data_r220 (isr:ra~rh)
+     00h     00e3h     00e3h    0001h      DATA     2         @data_r104 (isr:ra~rh)
+     00h     00e4h     00e4h    0001h      DATA     2         @data_r204 (isr:ra~rh)
+     00h     00e5h     00e5h    0001h      DATA     2         @data_r124 (isr:ra~rh)
+     00h     00e6h     00e6h    0001h      DATA     2         @data_r224 (isr:ra~rh)
+
+     Local Sections
+
+     Bank    Start     End      Length     Class    AvgIns    Name
+     00h     00feh     00feh    0000h      LOCAL    0         @dummy (E:\demo_20211221\main\MAIN.OBJ)
+     00h     00f7h     00fdh    0007h      LOCAL    4.7143    _main (E:\demo_20211221\main\MAIN.OBJ)
+     00h     00e7h     00e7h    0000h      LOCAL    0         _sys_init (E:\demo_20211221\main\INIT_HT66F018.OBJ)
+     00h     00e7h     00e7h    0000h      LOCAL    0         _isr_init (E:\demo_20211221\main\INIT_HT66F018.OBJ)
+     00h     00e7h     00e7h    0000h      LOCAL    0         _gpio_init (E:\demo_20211221\main\INIT_HT66F018.OBJ)
+     00h     00e7h     00e7h    0000h      LOCAL    0         _adc_init (E:\demo_20211221\main\INIT_HT66F018.OBJ)
+     00h     00e7h     00e7h    0000h      LOCAL    0         _timer_init (E:\demo_20211221\main\INIT_HT66F018.OBJ)
+     00h     00e7h     00e7h    0000h      LOCAL    0         _rtc_init (E:\demo_20211221\main\CLOCK_RUN.OBJ)
+     00h     00e9h     00e9h    0001h      LOCAL    4         _e2prom_init (E:\demo_20211221\main\EEPROM.OBJ)
+     00h     00e7h     00e7h    0001h      LOCAL    2         _e2prom_read (E:\demo_20211221\main\EEPROM.OBJ)
+     00h     00e7h     00e8h    0002h      LOCAL    3         _e2prom_write (E:\demo_20211221\main\EEPROM.OBJ)
+     00h     00e9h     00e9h    0000h      LOCAL    0         _time_save (E:\demo_20211221\main\CLOCK_RUN.OBJ)
+     00h     00e8h     00ebh    0004h      LOCAL    30        _Key_Scan (E:\demo_20211221\main\KEYSCAN.OBJ)
+     00h     00e8h     00e8h    0000h      LOCAL    0         _ADC_KeySample (E:\demo_20211221\main\VOLTAGE.OBJ)
+     00h     00e7h     00e7h    0001h      LOCAL    2         _GetAdResult (E:\demo_20211221\main\VOLTAGE.OBJ)
+     00h     00e7h     00e7h    0000h      LOCAL    0         _builtin_holtek_uitod (E:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     00e7h     00e7h    0000h      LOCAL    0         _builtin_holtek_dtmul (E:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     00e7h     00e7h    0000h      LOCAL    0         _builtin_holtek_dtdecode (E:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     00e7h     00e7h    0000h      LOCAL    0         _builtin_holtek_ftol (E:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     00e7h     00e7h    0000h      LOCAL    0         _builtin_holtek_ftdecode (E:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     00e7h     00e7h    0000h      LOCAL    0         _builtin_holtek_itod (E:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     00e7h     00e7h    0000h      LOCAL    0         _builtin_holtek_dtsubadd (E:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     00f3h     00f6h    0004h      LOCAL    3.75      _feed_run (E:\demo_20211221\main\FEED.OBJ)
+     00h     00e7h     00e7h    0000h      LOCAL    0         _Crom2Prom (CROM2PROM)
+     00h     00e7h     00e7h    0000h      LOCAL    0         _sound_play (E:\demo_20211221\main\SOUND_ISD1820.OBJ)
+     00h     00e8h     00e9h    0002h      LOCAL    11        _Delay_ms (E:\demo_20211221\main\INIT_HT66F018.OBJ)
+     00h     00e7h     00e7h    0001h      LOCAL    2         _builtin_holtek_delay_isr00 (E:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     00efh     00f2h    0004h      LOCAL    4.25      _motor (E:\demo_20211221\main\MOTOR.OBJ)
+     00h     00eah     00eeh    0005h      LOCAL    4.8       _motor_run (E:\demo_20211221\main\MOTOR.OBJ)
+     00h     00e7h     00e7h    0000h      LOCAL    0         _rtc_lcd (E:\demo_20211221\main\LCD.OBJ)
+     00h     00e8h     00ebh    0004h      LOCAL    5.25      _feed_scan (E:\demo_20211221\main\FEED.OBJ)
+     00h     00e7h     00e7h    0000h      LOCAL    0         @dummy12 (E:\demo_20211221\main\MAIN.OBJ)
+     00h     00e7h     00e7h    0000h      LOCAL    0         _timer0 (E:\demo_20211221\main\MAIN.OBJ)
+     00h     00e7h     00e7h    0000h      LOCAL    0         _pwr_task (E:\demo_20211221\main\LED.OBJ)
+     00h     00e7h     00e7h    0000h      LOCAL    0         @dummy16 (E:\demo_20211221\main\MAIN.OBJ)
+     00h     00e7h     00e7h    0000h      LOCAL    0         _timer1 (E:\demo_20211221\main\MAIN.OBJ)
+     00h     00e7h     00e7h    0000h      LOCAL    0         @dummy28 (E:\demo_20211221\main\MAIN.OBJ)
+     00h     00e7h     00e7h    0000h      LOCAL    0         _tb0 (E:\demo_20211221\main\MAIN.OBJ)
+     00h     00e7h     00e7h    0000h      LOCAL    0         _Clock_Run (E:\demo_20211221\main\CLOCK_RUN.OBJ)
+     00h     00e7h     00e7h    0000h      LOCAL    0         @dummy32 (E:\demo_20211221\main\MAIN.OBJ)
+     00h     00e7h     00e7h    0000h      LOCAL    0         _tb1 (E:\demo_20211221\main\MAIN.OBJ)
+     00h     00e7h     00e7h    0000h      LOCAL    0         @dummy4 (E:\demo_20211221\main\MAIN.OBJ)
+     00h     00e7h     00e7h    0000h      LOCAL    0         _Int0 (E:\demo_20211221\main\MAIN.OBJ)
+     00h     00e7h     00e7h    0000h      LOCAL    0         @dummy36 (E:\demo_20211221\main\MAIN.OBJ)
+     00h     00e7h     00e7h    0000h      LOCAL    0         _Int1 (E:\demo_20211221\main\MAIN.OBJ)
+     00h     00ech     00ech    0000h      LOCAL    0         _sound_rec (E:\demo_20211221\main\SOUND_ISD1820.OBJ)
+     00h     00e8h     00e8h    0000h      LOCAL    0         _battery_detect (E:\demo_20211221\main\VOLTAGE.OBJ)
+
+     Indepentent Local Sections
+
+     Bank    Start     End      Length     Class    AvgIns    Name
+     00h     00e7h     00e7h    0000h      ILOCAL   0         _glint_task (E:\demo_20211221\main\CLOCK_RUN.OBJ)
+     00h     00e7h     00e7h    0000h      ILOCAL   0         _timeout_task (E:\demo_20211221\main\CLOCK_RUN.OBJ)
+     00h     00e7h     00e7h    0000h      ILOCAL   0         _error_task (E:\demo_20211221\main\LED.OBJ)
+     00h     00e7h     00e7h    0000h      ILOCAL   0         _builtin_holtek_dtnorm (E:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     00e7h     00e7h    0000h      ILOCAL   0         _builtin_holtek_dtinf (E:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+
+     Public Symbols Information
+     Address            Public by Name
+     07abh              _ADC_KeySample
+     02bbh              _Clock_Run
+     0973h              _Crom2Prom
+     0972h              _Crom2PromNext
+     032dh              _Delay_ms
+     0729h              _GetAdResult
+     00b5h              _ISD1820_REC_TIME
+     02b1h              _Int0
+     02b6h              _Int1
+     0399h              _Key_Scan
+     00b4h              _REC_TIME_flag
+     0969h              __DELAYY0_isr00
+     0968h              __DELAYY1_isr00
+     0967h              __DELAYY2_isr00
+     0966h              __DELAYY3_isr00
+     0965h              __DELAYY4_isr00
+     0964h              __DELAYY5_isr00
+     0391h              _adc_init
+     074ah              _battery_detect
+     0069h              _builtin_holtek_dtadd
+     011bh              _builtin_holtek_dtdecode1
+     0110h              _builtin_holtek_dtdecode2
+     0014h              _builtin_holtek_dtinf
+     00a5h              _builtin_holtek_dtmul
+     0128h              _builtin_holtek_dtnorm
+     0067h              _builtin_holtek_dtsub
+     0123h              _builtin_holtek_dtzero
+     0126h              _builtin_holtek_dtzero1
+     00c3h              _builtin_holtek_exp1
+     00cch              _builtin_holtek_exp2
+     00c5h              _builtin_holtek_floatflag
+     015ch              _builtin_holtek_ftdecode1
+     00e5h              _builtin_holtek_ftol
+     0164h              _builtin_holtek_ftzero
+     0166h              _builtin_holtek_ftzero1
+     0059h              _builtin_holtek_itod
+     00c0h              _builtin_holtek_mant1
+     00c6h              _builtin_holtek_mant12p
+     00c9h              _builtin_holtek_mant2
+     00cdh              _builtin_holtek_prod
+     00c4h              _builtin_holtek_signs
+     0062h              _builtin_holtek_uitod
+     031eh              _e2prom_init
+     0306h              _e2prom_read
+     02f0h              _e2prom_write
+     00e7h              _e2prom_write_2
+     070ah              _error_task
+     00a4h              _feed_detect
+     00b0h              _feed_detect_again
+     00b3h              _feed_error
+     00b7h              _feed_going
+     08aah              _feed_run
+     00f3h              _feed_run_2
+     08feh              _feed_scan
+     02d2h              _glint_task
+     0349h              _gpio_init
+     037dh              _isr_init
+     00adh              _key_flag
+     00aeh              _key_value_count
+     00a9h              _lcd_glint
+     00a7h              _lcd_timeout
+     00a1h              _led_flag
+     0168h              _main
+     0852h              _motor
+     00efh              _motor_2
+     0806h              _motor_run
+     0001h              _pwr_task
+     00aah              _rtc_date
+     0008h              _rtc_init
+     001bh              _rtc_lcd
+     00a3h              _sheep_flag
+     0002h              _sound_play
+     0715h              _sound_rec
+     033dh              _sys_init
+     00b2h              _task_delay_error
+     00a5h              _task_delay_led
+     00a6h              _task_run_led
+     00b1h              _task_run_motor
+     028fh              _tb0
+     02abh              _tb1
+     00a0h              _time2_task
+     02e7h              _time_save
+     00a2h              _time_save_flag
+     02d9h              _timeout_task
+     0246h              _timer0
+     0289h              _timer1
+     036bh              _timer_init
+     00b6h              _voltage_low
+     00e3h              r104
+     00d0h              r10c
+     00d8h              r110
+     00dah              r11c
+     00e1h              r120
+     00e5h              r124
+     00e4h              r204
+     00d1h              r20c
+     00d9h              r210
+     00dbh              r21c
+     00e2h              r220
+     00e6h              r224
+     00d2h              r30c
+     00dch              r31c
+     00d3h              r40c
+     00ddh              r41c
+     00d4h              r50c
+     00deh              r51c
+     00d5h              r60c
+     00dfh              r61c
+     00d6h              r70c
+     00e0h              r71c
+     00b8h              ra
+     00d7h              ra0c
+     00b9h              rb
+     00bah              rc
+     00bbh              rd
+     00bch              re
+     00bdh              rf
+     00beh              rg
+     00bfh              rh
+     0048h              startup_value_1
+
+     Address            Public by Value
+     0001h              _pwr_task
+     0002h              _sound_play
+     0008h              _rtc_init
+     0014h              _builtin_holtek_dtinf
+     001bh              _rtc_lcd
+     0048h              startup_value_1
+     0059h              _builtin_holtek_itod
+     0062h              _builtin_holtek_uitod
+     0067h              _builtin_holtek_dtsub
+     0069h              _builtin_holtek_dtadd
+     00a0h              _time2_task
+     00a1h              _led_flag
+     00a2h              _time_save_flag
+     00a3h              _sheep_flag
+     00a4h              _feed_detect
+     00a5h              _task_delay_led
+     00a5h              _builtin_holtek_dtmul
+     00a6h              _task_run_led
+     00a7h              _lcd_timeout
+     00a9h              _lcd_glint
+     00aah              _rtc_date
+     00adh              _key_flag
+     00aeh              _key_value_count
+     00b0h              _feed_detect_again
+     00b1h              _task_run_motor
+     00b2h              _task_delay_error
+     00b3h              _feed_error
+     00b4h              _REC_TIME_flag
+     00b5h              _ISD1820_REC_TIME
+     00b6h              _voltage_low
+     00b7h              _feed_going
+     00b8h              ra
+     00b9h              rb
+     00bah              rc
+     00bbh              rd
+     00bch              re
+     00bdh              rf
+     00beh              rg
+     00bfh              rh
+     00c0h              _builtin_holtek_mant1
+     00c3h              _builtin_holtek_exp1
+     00c4h              _builtin_holtek_signs
+     00c5h              _builtin_holtek_floatflag
+     00c6h              _builtin_holtek_mant12p
+     00c9h              _builtin_holtek_mant2
+     00cch              _builtin_holtek_exp2
+     00cdh              _builtin_holtek_prod
+     00d0h              r10c
+     00d1h              r20c
+     00d2h              r30c
+     00d3h              r40c
+     00d4h              r50c
+     00d5h              r60c
+     00d6h              r70c
+     00d7h              ra0c
+     00d8h              r110
+     00d9h              r210
+     00dah              r11c
+     00dbh              r21c
+     00dch              r31c
+     00ddh              r41c
+     00deh              r51c
+     00dfh              r61c
+     00e0h              r71c
+     00e1h              r120
+     00e2h              r220
+     00e3h              r104
+     00e4h              r204
+     00e5h              r124
+     00e5h              _builtin_holtek_ftol
+     00e6h              r224
+     00e7h              _e2prom_write_2
+     00efh              _motor_2
+     00f3h              _feed_run_2
+     0110h              _builtin_holtek_dtdecode2
+     011bh              _builtin_holtek_dtdecode1
+     0123h              _builtin_holtek_dtzero
+     0126h              _builtin_holtek_dtzero1
+     0128h              _builtin_holtek_dtnorm
+     015ch              _builtin_holtek_ftdecode1
+     0164h              _builtin_holtek_ftzero
+     0166h              _builtin_holtek_ftzero1
+     0168h              _main
+     0246h              _timer0
+     0289h              _timer1
+     028fh              _tb0
+     02abh              _tb1
+     02b1h              _Int0
+     02b6h              _Int1
+     02bbh              _Clock_Run
+     02d2h              _glint_task
+     02d9h              _timeout_task
+     02e7h              _time_save
+     02f0h              _e2prom_write
+     0306h              _e2prom_read
+     031eh              _e2prom_init
+     032dh              _Delay_ms
+     033dh              _sys_init
+     0349h              _gpio_init
+     036bh              _timer_init
+     037dh              _isr_init
+     0391h              _adc_init
+     0399h              _Key_Scan
+     070ah              _error_task
+     0715h              _sound_rec
+     0729h              _GetAdResult
+     074ah              _battery_detect
+     07abh              _ADC_KeySample
+     0806h              _motor_run
+     0852h              _motor
+     08aah              _feed_run
+     08feh              _feed_scan
+     0964h              __DELAYY5_isr00
+     0965h              __DELAYY4_isr00
+     0966h              __DELAYY3_isr00
+     0967h              __DELAYY2_isr00
+     0968h              __DELAYY1_isr00
+     0969h              __DELAYY0_isr00
+     0972h              _Crom2PromNext
+     0973h              _Crom2Prom
+
+Error(L2001) : 未解决的外部符号'_num'，出现在'E:\demo_20211221\main\MAIN.OBJ'文件中
+Error(L2001) : 未解决的外部符号'_set_value_flag_2'，出现在'E:\demo_20211221\main\MAIN.OBJ'文件中
+Error(L2001) : 未解决的外部符号'_set_value_flag'，出现在'E:\demo_20211221\main\MAIN.OBJ'文件中
+Error(L2001) : 未解决的外部符号'_set_time'，出现在'E:\demo_20211221\main\MAIN.OBJ'文件中
+Error(L2001) : 未解决的外部符号'_get_meal'，出现在'E:\demo_20211221\main\MAIN.OBJ'文件中
+Error(L2001) : 未解决的外部符号'_set_meal'，出现在'E:\demo_20211221\main\MAIN.OBJ'文件中
+
+ROM Usage Statistics
+     Size      Used     Percentage
+     1000h     0976h    59%
+
+RAM Usage Statistics
+    Bank      Size      Used     Percentage
+     00h       0060h     005eh    97%
+     01h       0060h     0000h    0%
+     Total     00c0h     005eh    48%
+
+Use Stack Count
+_main: 5
+_timer0: 1
+_timer1: 0
+_tb0: 1
+_tb1: 0
+_Int0: 0
+_Int1: 0
+_sound_rec: 4
+_battery_detect: 2
+
+Call Tree
+    @dummy
+        _main (0)
+            _sys_init (1)
+            _isr_init (1)
+            _gpio_init (1)
+            _adc_init (1)
+            _timer_init (1)
+            _rtc_init (1)
+            _e2prom_init (1)
+                _e2prom_read (2)
+                _e2prom_write (2)
+            _e2prom_read (1)
+            _time_save (1)
+                _e2prom_write (2)
+            _Key_Scan (1)
+                _ADC_KeySample (2)
+                    _GetAdResult (3)
+                    _builtin_holtek_uitod (3)
+                    _builtin_holtek_dtmul (3)
+                        _builtin_holtek_dtdecode (4)
+                    _builtin_holtek_ftol (3)
+                        _builtin_holtek_ftdecode (4)
+                _builtin_holtek_itod (2)
+                _builtin_holtek_dtsubadd (2)
+                    _builtin_holtek_dtdecode (3)
+                _builtin_holtek_dtsubadd (2)
+                    _builtin_holtek_dtdecode (3)
+            _feed_run (1)
+                _Crom2Prom (2)
+                _sound_play (2)
+                _Delay_ms (2)
+                    _builtin_holtek_delay_isr00 (3)
+                _motor (2)
+                    _motor_run (3)
+                        _Delay_ms (4)
+                            _builtin_holtek_delay_isr00 (5)
+                    _Delay_ms (3)
+                        _builtin_holtek_delay_isr00 (4)
+            _Delay_ms (1)
+                _builtin_holtek_delay_isr00 (2)
+            _rtc_lcd (1)
+            _feed_scan (1)
+                _e2prom_read (2)
+                _Crom2Prom (2)
+                _rtc_lcd (2)
+    @dummy12
+        _timer0 (0)
+            _pwr_task (1)
+    @dummy16
+        _timer1 (0)
+    @dummy28
+        _tb0 (0)
+            _Clock_Run (1)
+    @dummy32
+        _tb1 (0)
+    @dummy4
+        _Int0 (0)
+    @dummy36
+        _Int1 (0)
+    _sound_rec
+        _Key_Scan (0)
+            _ADC_KeySample (1)
+                _GetAdResult (2)
+                _builtin_holtek_uitod (2)
+                _builtin_holtek_dtmul (2)
+                    _builtin_holtek_dtdecode (3)
+                _builtin_holtek_ftol (2)
+                    _builtin_holtek_ftdecode (3)
+            _builtin_holtek_itod (1)
+            _builtin_holtek_dtsubadd (1)
+                _builtin_holtek_dtdecode (2)
+            _builtin_holtek_dtsubadd (1)
+                _builtin_holtek_dtdecode (2)
+    _battery_detect
+        _GetAdResult (0)
+        _builtin_holtek_uitod (0)
+        _builtin_holtek_dtmul (0)
+            _builtin_holtek_dtdecode (1)
+        _builtin_holtek_ftol (0)
+            _builtin_holtek_ftdecode (1)
+
+错误总数 : 6  警告总数 : 0

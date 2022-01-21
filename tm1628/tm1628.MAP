@@ -1,0 +1,268 @@
+
+连接器　版本8.7.7.211123
+Input Object File: E:\demo_20211221\tm1628\TM1628.OBJ
+Input Object File: E:\demo_20211221\tm1628\STARTUP1_L.OBJ
+
+Input Library File: E:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB
+Input Library File: E:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\v3_tabrd_mrsc.lib
+
+
+     Bank    Start     End      Length     Class    AvgIns    Name
+     00h     0000h     0000h    0001h      CODE               @code (E:\demo_20211221\tm1628\TM1628.OBJ)
+     00h     0001h     000ah    000ah      CODE               @crom (E:\demo_20211221\tm1628\TM1628.OBJ)
+     00h     000ch     000fh    0004h      CODE               @isr_TM0_code (E:\demo_20211221\tm1628\TM1628.OBJ)
+     00h     0010h     0015h    0006h      CODE               _send_command (E:\demo_20211221\tm1628\TM1628.OBJ)
+     00h     0016h     001bh    0006h      CODE               _isr_TM0 (E:\demo_20211221\tm1628\TM1628.OBJ)
+     00h     001ch     001fh    0004h      CODE               @isr_TB0_code (E:\demo_20211221\tm1628\TM1628.OBJ)
+     00h     0020h     0040h    0021h      CODE               @start (E:\demo_20211221\tm1628\TM1628.OBJ)
+     00h     0041h     004fh    000fh      CODE               _send_8bit (E:\demo_20211221\tm1628\TM1628.OBJ)
+     00h     0050h     0059h    000ah      CODE               _Write_DATA (E:\demo_20211221\tm1628\TM1628.OBJ)
+     00h     005ah     006ah    0011h      CODE               _init_TM1628 (E:\demo_20211221\tm1628\TM1628.OBJ)
+     00h     006bh     0083h    0019h      CODE               _GPIOA_INIT (E:\demo_20211221\tm1628\TM1628.OBJ)
+     00h     0084h     009ch    0019h      CODE               _GPIOB_INIT (E:\demo_20211221\tm1628\TM1628.OBJ)
+     00h     009dh     00b5h    0019h      CODE               _GPIOC_INIT (E:\demo_20211221\tm1628\TM1628.OBJ)
+     00h     00b6h     00c4h    000fh      CODE               _clr_ram_en (E:\demo_20211221\tm1628\TM1628.OBJ)
+     00h     00c5h     00f4h    0030h      CODE               _Init_clock (E:\demo_20211221\tm1628\TM1628.OBJ)
+     00h     00f5h     010ch    0018h      CODE               _isr_TB0 (E:\demo_20211221\tm1628\TM1628.OBJ)
+     00h     010dh     019dh    0091h      CODE               _main (E:\demo_20211221\tm1628\TM1628.OBJ)
+     00h     019eh     01a1h    0004h      CODE               @ROMDATA_BASE (E:\demo_20211221\tm1628\STARTUP1_L.OBJ)
+     00h     01a2h     01abh    000ah      CODE               __DELAYX (E:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     01ach     01c4h    0019h      CODE               _builtin_holtek_divmodqi4_isr00 (E:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     01c5h     01d4h    0010h      CODE               _CROM2PROM (CROM2PROM)
+     00h     00a0h     00a0h    0001h      DATA     1         @HCCINIT (E:\demo_20211221\tm1628\TM1628.OBJ)
+     00h     00a1h     00d7h    0037h      DATA     0.3454    @HCCINIT0 (E:\demo_20211221\tm1628\TM1628.OBJ)
+     00h     00d8h     00d8h    0001h      DATA     32        @data_ra (E:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     00d9h     00d9h    0001h      DATA     2         @data_r10c (isr:ra~rh)
+     00h     00dah     00dah    0001h      DATA     2         @data_r20c (isr:ra~rh)
+     00h     00dbh     00dbh    0001h      DATA     2         @data_r11c (isr:ra~rh)
+     00h     00dch     00dch    0001h      DATA     2         @data_r21c (isr:ra~rh)
+
+     Local Sections
+
+     Bank    Start     End      Length     Class    AvgIns    Name
+     00h     00ddh     00ddh    0000h      LOCAL    0         @dummy12 (E:\demo_20211221\tm1628\TM1628.OBJ)
+     00h     00ddh     00ddh    0000h      LOCAL    0         _isr_TM0 (E:\demo_20211221\tm1628\TM1628.OBJ)
+     00h     00ddh     00ddh    0000h      LOCAL    0         @dummy28 (E:\demo_20211221\tm1628\TM1628.OBJ)
+     00h     00ddh     00ddh    0000h      LOCAL    0         _isr_TB0 (E:\demo_20211221\tm1628\TM1628.OBJ)
+     00h     00e2h     00e2h    0000h      LOCAL    0         @dummy (E:\demo_20211221\tm1628\TM1628.OBJ)
+     00h     00e2h     00e2h    0000h      LOCAL    0         _main (E:\demo_20211221\tm1628\TM1628.OBJ)
+     00h     00ddh     00ddh    0000h      LOCAL    0         __DELAYX (E:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     00deh     00deh    0000h      LOCAL    0         _Init_clock (E:\demo_20211221\tm1628\TM1628.OBJ)
+     00h     00ddh     00ddh    0001h      LOCAL    1         _clr_ram_en (E:\demo_20211221\tm1628\TM1628.OBJ)
+     00h     00ddh     00e0h    0004h      LOCAL    2.75      _GPIOA_INIT (E:\demo_20211221\tm1628\TM1628.OBJ)
+     00h     00ddh     00dfh    0003h      LOCAL    3.3333    _GPIOB_INIT (E:\demo_20211221\tm1628\TM1628.OBJ)
+     00h     00ddh     00dfh    0003h      LOCAL    3.3333    _GPIOC_INIT (E:\demo_20211221\tm1628\TM1628.OBJ)
+     00h     00dfh     00dfh    0001h      LOCAL    2         _init_TM1628 (E:\demo_20211221\tm1628\TM1628.OBJ)
+     00h     00deh     00deh    0001h      LOCAL    2         _send_command (E:\demo_20211221\tm1628\TM1628.OBJ)
+     00h     00ddh     00ddh    0001h      LOCAL    3         _send_8bit (E:\demo_20211221\tm1628\TM1628.OBJ)
+     00h     00ddh     00e1h    0005h      LOCAL    8.6       _builtin_holtek_divmodqi4_isr00 (E:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     00ddh     00ddh    0000h      LOCAL    0         _Crom2Prom (CROM2PROM)
+     00h     00dfh     00e0h    0002h      LOCAL    5.5       _Write_DATA (E:\demo_20211221\tm1628\TM1628.OBJ)
+
+     Public Symbols Information
+     Address            Public by Name
+     01c5h              _Crom2Prom
+     01c5h              _Crom2PromNext
+     006bh              _GPIOA_INIT
+     0084h              _GPIOB_INIT
+     009dh              _GPIOC_INIT
+     00c5h              _Init_clock
+     0050h              _Write_DATA
+     00dfh              _Write_DATA_2
+     01a5h              __DELAYX0
+     01a4h              __DELAYX1
+     01a4h              __DELAYX2
+     01a3h              __DELAYX3
+     01a3h              __DELAYX4
+     01a2h              __DELAYX5
+     01a2h              __DELAYX6
+     00d0h              _alarm_hour
+     00cfh              _alarm_min
+     00ceh              _alarm_second
+     00a4h              _bBbSound
+     00a5h              _bbCnt
+     00a8h              _bbRam
+     00a6h              _bbTime
+     00c8h              _bj_min
+     00c7h              _bj_second
+     01ach              _builtin_holtek_udivmodqi4_isr00
+     00e1h              _builtin_holtek_udivmodqi4_isr00_2
+     00b6h              _clr_ram_en
+     00a0h              _col_staus
+     00beh              _data
+     005ah              _init_TM1628
+     00f5h              _isr_TB0
+     0016h              _isr_TM0
+     00b9h              _keystep
+     010dh              _main
+     00b2h              _num1
+     00b1h              _num2
+     00afh              _num3
+     00adh              _num4
+     00ach              _num5
+     00abh              _num6
+     00aah              _num7
+     00a9h              _num8
+     00cdh              _peking_hour
+     00cch              _peking_min
+     00c9h              _peking_min1
+     00cbh              _peking_second
+     00cah              _peking_second1
+     00a1h              _rtc_date
+     0041h              _send_8bit
+     0010h              _send_command
+     00bdh              _step
+     00bch              _step1
+     00bbh              _step2
+     00bah              _step3
+     00b6h              _sum
+     00b4h              _sum1
+     00c0h              _t10s
+     00bfh              _t2s
+     00c5h              _tms
+     00c4h              _tms1
+     00c3h              _tms2
+     00c2h              _tms3
+     00c1h              _tms4
+     00d7h              _uF1
+     00d6h              _uF2
+     00d5h              _uF3
+     00d4h              _uF4
+     00d3h              _uF5
+     00d2h              _uF6
+     00d1h              _uF7
+     00b8h              _value
+     00b3h              _wei
+     00d9h              r10c
+     00dbh              r11c
+     00dah              r20c
+     00dch              r21c
+     00d8h              ra
+     019eh              startup_value_1
+
+     Address            Public by Value
+     0010h              _send_command
+     0016h              _isr_TM0
+     0041h              _send_8bit
+     0050h              _Write_DATA
+     005ah              _init_TM1628
+     006bh              _GPIOA_INIT
+     0084h              _GPIOB_INIT
+     009dh              _GPIOC_INIT
+     00a0h              _col_staus
+     00a1h              _rtc_date
+     00a4h              _bBbSound
+     00a5h              _bbCnt
+     00a6h              _bbTime
+     00a8h              _bbRam
+     00a9h              _num8
+     00aah              _num7
+     00abh              _num6
+     00ach              _num5
+     00adh              _num4
+     00afh              _num3
+     00b1h              _num2
+     00b2h              _num1
+     00b3h              _wei
+     00b4h              _sum1
+     00b6h              _clr_ram_en
+     00b6h              _sum
+     00b8h              _value
+     00b9h              _keystep
+     00bah              _step3
+     00bbh              _step2
+     00bch              _step1
+     00bdh              _step
+     00beh              _data
+     00bfh              _t2s
+     00c0h              _t10s
+     00c1h              _tms4
+     00c2h              _tms3
+     00c3h              _tms2
+     00c4h              _tms1
+     00c5h              _Init_clock
+     00c5h              _tms
+     00c7h              _bj_second
+     00c8h              _bj_min
+     00c9h              _peking_min1
+     00cah              _peking_second1
+     00cbh              _peking_second
+     00cch              _peking_min
+     00cdh              _peking_hour
+     00ceh              _alarm_second
+     00cfh              _alarm_min
+     00d0h              _alarm_hour
+     00d1h              _uF7
+     00d2h              _uF6
+     00d3h              _uF5
+     00d4h              _uF4
+     00d5h              _uF3
+     00d6h              _uF2
+     00d7h              _uF1
+     00d8h              ra
+     00d9h              r10c
+     00dah              r20c
+     00dbh              r11c
+     00dch              r21c
+     00dfh              _Write_DATA_2
+     00e1h              _builtin_holtek_udivmodqi4_isr00_2
+     00f5h              _isr_TB0
+     010dh              _main
+     019eh              startup_value_1
+     01a2h              __DELAYX5
+     01a2h              __DELAYX6
+     01a3h              __DELAYX3
+     01a3h              __DELAYX4
+     01a4h              __DELAYX1
+     01a4h              __DELAYX2
+     01a5h              __DELAYX0
+     01ach              _builtin_holtek_udivmodqi4_isr00
+     01c5h              _Crom2Prom
+     01c5h              _Crom2PromNext
+
+
+ROM Usage Statistics
+     Size      Used     Percentage
+     1000h     01d4h    11%
+
+RAM Usage Statistics
+    Bank      Size      Used     Percentage
+     00h       0060h     0042h    68%
+     01h       0060h     0000h    0%
+     Total     00c0h     0042h    34%
+
+Use Stack Count
+_Delay_ms: 1
+_isr_TM0: 0
+_isr_TB0: 0
+_main: 3
+
+Call Tree
+    _Delay_ms
+        _builtin_holtek_delay_isr00 (0)
+    @dummy12
+        _isr_TM0 (0)
+    @dummy28
+        _isr_TB0 (0)
+    @dummy
+        _main (0)
+            __DELAYX (1)
+            _Init_clock (1)
+                _clr_ram_en (2)
+            _GPIOA_INIT (1)
+            _GPIOB_INIT (1)
+            _GPIOC_INIT (1)
+            _init_TM1628 (1)
+                _send_command (2)
+                    _send_8bit (3)
+                _send_8bit (2)
+            _builtin_holtek_divmodqi4_isr00 (1)
+            _Crom2Prom (1)
+            _Write_DATA (1)
+                _send_command (2)
+                    _send_8bit (3)
+                _send_8bit (2)
+
+HLINK : 程序的开始执行点在程序段'@code'（地址0）。定义在'E:\demo_20211221\tm1628\TM1628.OBJ' 文件中
+
+错误总数 : 0  警告总数 : 0

@@ -1,0 +1,225 @@
+
+连接器　版本8.7.7.211123
+Input Object File: e:\demo_20211221\gpio\GPIO.OBJ
+Input Object File: e:\demo_20211221\gpio\STARTUP1_L.OBJ
+
+Input Library File: E:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB
+Input Library File: E:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\v3_tabrd_mrsc.lib
+
+
+     Bank    Start     End      Length     Class    AvgIns    Name
+     00h     0000h     0000h    0001h      CODE               @code (e:\demo_20211221\gpio\GPIO.OBJ)
+     00h     0001h     0001h    0001h      CODE               @start (e:\demo_20211221\gpio\GPIO.OBJ)
+     00h     0002h     0007h    0006h      CODE               _isr_TM0 (e:\demo_20211221\gpio\GPIO.OBJ)
+     00h     000ch     000fh    0004h      CODE               @isr_TM0_code (e:\demo_20211221\gpio\GPIO.OBJ)
+     00h     0010h     001eh    000fh      CODE               _Delay_ms (e:\demo_20211221\gpio\GPIO.OBJ)
+     00h     001fh     0037h    0019h      CODE               _GPIOA_INIT (e:\demo_20211221\gpio\GPIO.OBJ)
+     00h     0038h     0050h    0019h      CODE               _GPIOB_INIT (e:\demo_20211221\gpio\GPIO.OBJ)
+     00h     0051h     0069h    0019h      CODE               _GPIOC_INIT (e:\demo_20211221\gpio\GPIO.OBJ)
+     00h     006ah     0078h    000fh      CODE               _clr_ram_en (e:\demo_20211221\gpio\GPIO.OBJ)
+     00h     0079h     0098h    0020h      CODE               _Init_clock (e:\demo_20211221\gpio\GPIO.OBJ)
+     00h     0099h     00d4h    003ch      CODE               _main (e:\demo_20211221\gpio\GPIO.OBJ)
+     00h     00d5h     00deh    000ah      CODE               __DELAYX (E:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     00dfh     00ech    000eh      CODE               _builtin_holtek_delay_isr00 (E:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     00a0h     00d3h    0034h      DATA     0         @HCCINIT0 (e:\demo_20211221\gpio\GPIO.OBJ)
+     00h     00d4h     00d4h    0001h      DATA     18        @data_ra (E:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     00d5h     00d5h    0001h      DATA     2         @data_r10c (isr:ra~rh)
+     00h     00d6h     00d6h    0001h      DATA     2         @data_r20c (isr:ra~rh)
+
+     Local Sections
+
+     Bank    Start     End      Length     Class    AvgIns    Name
+     00h     00d7h     00d7h    0000h      LOCAL    0         @dummy12 (e:\demo_20211221\gpio\GPIO.OBJ)
+     00h     00d7h     00d7h    0000h      LOCAL    0         _isr_TM0 (e:\demo_20211221\gpio\GPIO.OBJ)
+     00h     00dbh     00dbh    0000h      LOCAL    0         @dummy (e:\demo_20211221\gpio\GPIO.OBJ)
+     00h     00dbh     00dbh    0000h      LOCAL    0         _main (e:\demo_20211221\gpio\GPIO.OBJ)
+     00h     00d7h     00d7h    0000h      LOCAL    0         __DELAYX (E:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     00d8h     00d8h    0000h      LOCAL    0         _Init_clock (e:\demo_20211221\gpio\GPIO.OBJ)
+     00h     00d7h     00d7h    0001h      LOCAL    1         _clr_ram_en (e:\demo_20211221\gpio\GPIO.OBJ)
+     00h     00d7h     00dah    0004h      LOCAL    4.25      _GPIOA_INIT (e:\demo_20211221\gpio\GPIO.OBJ)
+     00h     00d7h     00d9h    0003h      LOCAL    4.6667    _GPIOB_INIT (e:\demo_20211221\gpio\GPIO.OBJ)
+     00h     00d7h     00d9h    0003h      LOCAL    4.6667    _GPIOC_INIT (e:\demo_20211221\gpio\GPIO.OBJ)
+     00h     00d8h     00d9h    0002h      LOCAL    4         _Delay_ms (e:\demo_20211221\gpio\GPIO.OBJ)
+     00h     00d7h     00d7h    0001h      LOCAL    2         _builtin_holtek_delay_isr00 (E:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+
+     Public Symbols Information
+     Address            Public by Name
+     0010h              _Delay_ms
+     00d8h              _Delay_ms_2
+     001fh              _GPIOA_INIT
+     00d7h              _GPIOA_INIT_2
+     0038h              _GPIOB_INIT
+     0051h              _GPIOC_INIT
+     0079h              _Init_clock
+     00dbh              __DELAYX0
+     00dah              __DELAYX1
+     00d9h              __DELAYX2
+     00d8h              __DELAYX3
+     00d7h              __DELAYX4
+     00d6h              __DELAYX5
+     00d5h              __DELAYX6
+     00e4h              __DELAYY0_isr00
+     00e3h              __DELAYY1_isr00
+     00e2h              __DELAYY2_isr00
+     00e1h              __DELAYY3_isr00
+     00e0h              __DELAYY4_isr00
+     00dfh              __DELAYY5_isr00
+     00cch              _alarm_hour
+     00cbh              _alarm_min
+     00cah              _alarm_second
+     00a0h              _bBbSound
+     00a1h              _bbCnt
+     00a4h              _bbRam
+     00a2h              _bbTime
+     00c4h              _bj_min
+     00c3h              _bj_second
+     006ah              _clr_ram_en
+     00bah              _data
+     0002h              _isr_TM0
+     00b5h              _keystep
+     0099h              _main
+     00aeh              _num1
+     00adh              _num2
+     00abh              _num3
+     00a9h              _num4
+     00a8h              _num5
+     00a7h              _num6
+     00a6h              _num7
+     00a5h              _num8
+     00c9h              _peking_hour
+     00c8h              _peking_min
+     00c5h              _peking_min1
+     00c7h              _peking_second
+     00c6h              _peking_second1
+     00b9h              _step
+     00b8h              _step1
+     00b7h              _step2
+     00b6h              _step3
+     00b2h              _sum
+     00b0h              _sum1
+     00bch              _t10s
+     00bbh              _t2s
+     00c1h              _tms
+     00c0h              _tms1
+     00bfh              _tms2
+     00beh              _tms3
+     00bdh              _tms4
+     00d3h              _uF1
+     00d2h              _uF2
+     00d1h              _uF3
+     00d0h              _uF4
+     00cfh              _uF5
+     00ceh              _uF6
+     00cdh              _uF7
+     00b4h              _value
+     00afh              _wei
+     00d5h              r10c
+     00d6h              r20c
+     00d4h              ra
+
+     Address            Public by Value
+     0002h              _isr_TM0
+     0010h              _Delay_ms
+     001fh              _GPIOA_INIT
+     0038h              _GPIOB_INIT
+     0051h              _GPIOC_INIT
+     006ah              _clr_ram_en
+     0079h              _Init_clock
+     0099h              _main
+     00a0h              _bBbSound
+     00a1h              _bbCnt
+     00a2h              _bbTime
+     00a4h              _bbRam
+     00a5h              _num8
+     00a6h              _num7
+     00a7h              _num6
+     00a8h              _num5
+     00a9h              _num4
+     00abh              _num3
+     00adh              _num2
+     00aeh              _num1
+     00afh              _wei
+     00b0h              _sum1
+     00b2h              _sum
+     00b4h              _value
+     00b5h              _keystep
+     00b6h              _step3
+     00b7h              _step2
+     00b8h              _step1
+     00b9h              _step
+     00bah              _data
+     00bbh              _t2s
+     00bch              _t10s
+     00bdh              _tms4
+     00beh              _tms3
+     00bfh              _tms2
+     00c0h              _tms1
+     00c1h              _tms
+     00c3h              _bj_second
+     00c4h              _bj_min
+     00c5h              _peking_min1
+     00c6h              _peking_second1
+     00c7h              _peking_second
+     00c8h              _peking_min
+     00c9h              _peking_hour
+     00cah              _alarm_second
+     00cbh              _alarm_min
+     00cch              _alarm_hour
+     00cdh              _uF7
+     00ceh              _uF6
+     00cfh              _uF5
+     00d0h              _uF4
+     00d1h              _uF3
+     00d2h              _uF2
+     00d3h              _uF1
+     00d4h              ra
+     00d5h              r10c
+     00d5h              __DELAYX6
+     00d6h              r20c
+     00d6h              __DELAYX5
+     00d7h              _GPIOA_INIT_2
+     00d7h              __DELAYX4
+     00d8h              __DELAYX3
+     00d8h              _Delay_ms_2
+     00d9h              __DELAYX2
+     00dah              __DELAYX1
+     00dbh              __DELAYX0
+     00dfh              __DELAYY5_isr00
+     00e0h              __DELAYY4_isr00
+     00e1h              __DELAYY3_isr00
+     00e2h              __DELAYY2_isr00
+     00e3h              __DELAYY1_isr00
+     00e4h              __DELAYY0_isr00
+
+
+ROM Usage Statistics
+     Size      Used     Percentage
+     1000h     00e9h    5%
+
+RAM Usage Statistics
+    Bank      Size      Used     Percentage
+     00h       0060h     003bh    61%
+     01h       0060h     0000h    0%
+     Total     00c0h     003bh    30%
+
+Use Stack Count
+_isr_TM0: 0
+_main: 2
+
+Call Tree
+    @dummy12
+        _isr_TM0 (0)
+    @dummy
+        _main (0)
+            __DELAYX (1)
+            _Init_clock (1)
+                _clr_ram_en (2)
+            _GPIOA_INIT (1)
+            _GPIOB_INIT (1)
+            _GPIOC_INIT (1)
+            _Delay_ms (1)
+                _builtin_holtek_delay_isr00 (2)
+
+HLINK : 程序的开始执行点在程序段'@code'（地址0）。定义在'e:\demo_20211221\gpio\GPIO.OBJ' 文件中
+
+错误总数 : 0  警告总数 : 0

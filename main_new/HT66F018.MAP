@@ -1,0 +1,447 @@
+
+连接器　版本8.7.7.211123
+Input Object File: E:\HT66F018_F12\main_new\MAIN.OBJ
+Input Object File: E:\HT66F018_F12\main_new\STARTUP1_L.OBJ
+Input Object File: E:\HT66F018_F12\main_new\CLOCK_RUN.OBJ
+Input Object File: E:\HT66F018_F12\main_new\EEPROM.OBJ
+Input Object File: E:\HT66F018_F12\main_new\INIT_HT66F018.OBJ
+Input Object File: E:\HT66F018_F12\main_new\LCD.OBJ
+Input Object File: E:\HT66F018_F12\main_new\TM1628.OBJ
+Input Object File: E:\HT66F018_F12\main_new\KEYSCAN.OBJ
+Input Object File: E:\HT66F018_F12\main_new\MENU.OBJ
+Input Object File: E:\HT66F018_F12\main_new\FEED.OBJ
+Input Object File: E:\HT66F018_F12\main_new\RECORD_CONTROL.OBJ
+Input Object File: E:\HT66F018_F12\main_new\MOTOR.OBJ
+Input Object File: E:\HT66F018_F12\main_new\VOLTAGE.OBJ
+Input Object File: E:\HT66F018_F12\main_new\LED.OBJ
+
+Input Library File: E:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB
+Input Library File: E:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\v3_tabrd_mrsc.lib
+
+
+     Bank    Start     End      Length     Class    AvgIns    Name
+     00h     0000h     0000h    0001h      CODE               @code (E:\HT66F018_F12\main_new\MAIN.OBJ)
+     00h     0004h     0004h    0001h      CODE               @INT0_ISR_code (E:\HT66F018_F12\main_new\MAIN.OBJ)
+     00h     0008h     0008h    0001h      CODE               @COMP_ISR_code (E:\HT66F018_F12\main_new\MAIN.OBJ)
+     00h     000ch     000fh    0004h      CODE               @Timer0_ISR_code (E:\HT66F018_F12\main_new\MAIN.OBJ)
+     00h     0010h     0013h    0004h      CODE               @Timer1_2_ISR_code (E:\HT66F018_F12\main_new\MAIN.OBJ)
+     00h     0014h     0014h    0001h      CODE               @LVD_EEPROM_ISR_code (E:\HT66F018_F12\main_new\MAIN.OBJ)
+     00h     0018h     0018h    0001h      CODE               @ADC_ISR_code (E:\HT66F018_F12\main_new\MAIN.OBJ)
+     00h     001ch     001ch    0001h      CODE               @TB0_ISR_code (E:\HT66F018_F12\main_new\MAIN.OBJ)
+     00h     0020h     0020h    0001h      CODE               @TB1_ISR_code (E:\HT66F018_F12\main_new\MAIN.OBJ)
+     00h     0024h     0024h    0001h      CODE               @INT1_ISR_code (E:\HT66F018_F12\main_new\MAIN.OBJ)
+     00h     0025h     0045h    0021h      CODE               @start (E:\HT66F018_F12\main_new\MAIN.OBJ)
+     00h     0046h     005eh    0019h      CODE               @ROMDATA_BASE (E:\HT66F018_F12\main_new\STARTUP1_L.OBJ)
+     00h     005fh     0068h    000ah      CODE               @crom (E:\HT66F018_F12\main_new\LCD.OBJ)
+     00h     0069h     0072h    000ah      CODE               @crom (E:\HT66F018_F12\main_new\MENU.OBJ)
+     00h     0073h     0163h    00f1h      CODE               _main (E:\HT66F018_F12\main_new\MAIN.OBJ)
+     00h     0164h     0208h    00a5h      CODE               _Timer0_ISR (E:\HT66F018_F12\main_new\MAIN.OBJ)
+     00h     0209h     021dh    0015h      CODE               _Timer1_2_ISR (E:\HT66F018_F12\main_new\MAIN.OBJ)
+     00h     021eh     0221h    0004h      CODE               _rtc_init (E:\HT66F018_F12\main_new\CLOCK_RUN.OBJ)
+     00h     0222h     022eh    000dh      CODE               _time_save (E:\HT66F018_F12\main_new\CLOCK_RUN.OBJ)
+     00h     022fh     0244h    0016h      CODE               _EEPROM_Write_Byte (E:\HT66F018_F12\main_new\EEPROM.OBJ)
+     00h     0245h     0254h    0010h      CODE               _EEPROM_Read_Byte (E:\HT66F018_F12\main_new\EEPROM.OBJ)
+     00h     0255h     0264h    0010h      CODE               _EEPROM_Init (E:\HT66F018_F12\main_new\EEPROM.OBJ)
+     00h     0265h     026ah    0006h      CODE               _ADC_Init (E:\HT66F018_F12\main_new\INIT_HT66F018.OBJ)
+     00h     026bh     0297h    002dh      CODE               _ADC_GetChannelValue (E:\HT66F018_F12\main_new\INIT_HT66F018.OBJ)
+     00h     0298h     02b0h    0019h      CODE               _GPIOA_INIT (E:\HT66F018_F12\main_new\INIT_HT66F018.OBJ)
+     00h     02b1h     02c9h    0019h      CODE               _GPIOB_INIT (E:\HT66F018_F12\main_new\INIT_HT66F018.OBJ)
+     00h     02cah     02e2h    0019h      CODE               _GPIOC_INIT (E:\HT66F018_F12\main_new\INIT_HT66F018.OBJ)
+     00h     02e3h     02f1h    000fh      CODE               _clr_ram_en (E:\HT66F018_F12\main_new\INIT_HT66F018.OBJ)
+     00h     02f2h     031ch    002bh      CODE               _Init_clock (E:\HT66F018_F12\main_new\INIT_HT66F018.OBJ)
+     00h     031dh     0331h    0015h      CODE               _UART_SoftWareSendByte (E:\HT66F018_F12\main_new\INIT_HT66F018.OBJ)
+     00h     0332h     0394h    0063h      CODE               _rtc_lcd (E:\HT66F018_F12\main_new\LCD.OBJ)
+     00h     0395h     03a3h    000fh      CODE               _send_8bit (E:\HT66F018_F12\main_new\TM1628.OBJ)
+     00h     03a4h     03a9h    0006h      CODE               _send_command (E:\HT66F018_F12\main_new\TM1628.OBJ)
+     00h     03aah     03b3h    000ah      CODE               _Write_DATA (E:\HT66F018_F12\main_new\TM1628.OBJ)
+     00h     03b4h     03c4h    0011h      CODE               _init_TM1628 (E:\HT66F018_F12\main_new\TM1628.OBJ)
+     00h     03c5h     0425h    0061h      CODE               _key_scan (E:\HT66F018_F12\main_new\KEYSCAN.OBJ)
+     00h     0426h     05c9h    01a4h      CODE               _set_val (E:\HT66F018_F12\main_new\MENU.OBJ)
+     00h     05cah     0655h    008ch      CODE               _set_time (E:\HT66F018_F12\main_new\MENU.OBJ)
+     00h     0656h     0742h    00edh      CODE               _get_meal (E:\HT66F018_F12\main_new\MENU.OBJ)
+     00h     0743h     0808h    00c6h      CODE               _set_meal (E:\HT66F018_F12\main_new\MENU.OBJ)
+     00h     0809h     0831h    0029h      CODE               _feed_run (E:\HT66F018_F12\main_new\FEED.OBJ)
+     00h     0832h     0882h    0051h      CODE               _feed_scan (E:\HT66F018_F12\main_new\FEED.OBJ)
+     00h     0883h     0890h    000eh      CODE               _use_delay_us (E:\HT66F018_F12\main_new\RECORD_CONTROL.OBJ)
+     00h     0891h     08bdh    002dh      CODE               _set_voice (E:\HT66F018_F12\main_new\RECORD_CONTROL.OBJ)
+     00h     08beh     0909h    004ch      CODE               _motor_run (E:\HT66F018_F12\main_new\MOTOR.OBJ)
+     00h     090ah     0965h    005ch      CODE               _motor (E:\HT66F018_F12\main_new\MOTOR.OBJ)
+     00h     0966h     0975h    0010h      CODE               _battery_detect (E:\HT66F018_F12\main_new\VOLTAGE.OBJ)
+     00h     0976h     097fh    000ah      CODE               __DELAYX (E:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     0980h     0998h    0019h      CODE               _builtin_holtek_divmodqi4_isr00 (E:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     0999h     09a8h    0010h      CODE               _CROM2PROM (CROM2PROM)
+     00h     00a0h     00aeh    000fh      DATA     4.1333    @HCCINIT (E:\HT66F018_F12\main_new\MAIN.OBJ)
+     00h     00afh     00b2h    0004h      DATA     1         @HCCINIT0 (E:\HT66F018_F12\main_new\MAIN.OBJ)
+     00h     00b3h     00b4h    0002h      DATA     4         @HCCINIT (E:\HT66F018_F12\main_new\CLOCK_RUN.OBJ)
+     00h     00b5h     00b7h    0003h      DATA     14.667    @HCCINIT0 (E:\HT66F018_F12\main_new\CLOCK_RUN.OBJ)
+     00h     00b8h     00b8h    0001h      DATA     0         @HCCINIT (E:\HT66F018_F12\main_new\LCD.OBJ)
+     00h     00b9h     00b9h    0001h      DATA     9         @HCCINIT (E:\HT66F018_F12\main_new\KEYSCAN.OBJ)
+     00h     00bah     00bch    0003h      DATA     4.3333    @HCCINIT (E:\HT66F018_F12\main_new\MENU.OBJ)
+     00h     00bdh     00bdh    0001h      DATA     5         @HCCINIT (E:\HT66F018_F12\main_new\FEED.OBJ)
+     00h     00beh     00d5h    0018h      DATA     0         @HCCINIT0 (E:\HT66F018_F12\main_new\FEED.OBJ)
+     00h     00d6h     00d8h    0003h      DATA     5         @HCCINIT (E:\HT66F018_F12\main_new\RECORD_CONTROL.OBJ)
+     00h     00d9h     00dbh    0003h      DATA     7         @HCCINIT (E:\HT66F018_F12\main_new\MOTOR.OBJ)
+     00h     00dch     00dch    0001h      DATA     3         @HCCINIT (E:\HT66F018_F12\main_new\VOLTAGE.OBJ)
+     00h     00ddh     00ddh    0001h      DATA     192       @data_ra (E:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     00deh     00deh    0001h      DATA     47        @data_rb (E:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     00dfh     00dfh    0001h      DATA     44        @data_rc (E:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     00e0h     00e0h    0001h      DATA     9         @data_rd (E:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     00e1h     00e1h    0001h      DATA     9         @data_re (E:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     00e2h     00e2h    0001h      DATA     2         @data_r10c (isr:ra~rh)
+     00h     00e3h     00e3h    0001h      DATA     2         @data_r20c (isr:ra~rh)
+     00h     00e4h     00e4h    0001h      DATA     15        @data_rb0c (isr:ra~rh)
+     00h     00e5h     00e5h    0001h      DATA     15        @data_rc0c (isr:ra~rh)
+     00h     00e6h     00e6h    0001h      DATA     6         @data_ra0c (isr:ra~rh)
+     00h     00e7h     00e7h    0001h      DATA     2         @data_r110 (isr:ra~rh)
+     00h     00e8h     00e8h    0001h      DATA     2         @data_r210 (isr:ra~rh)
+
+     Local Sections
+
+     Bank    Start     End      Length     Class    AvgIns    Name
+     00h     00feh     00feh    0000h      LOCAL    0         @dummy (E:\HT66F018_F12\main_new\MAIN.OBJ)
+     00h     00feh     00ffh    0002h      LOCAL    4         _main (E:\HT66F018_F12\main_new\MAIN.OBJ)
+     00h     00e9h     00e9h    0000h      LOCAL    0         __DELAYX (E:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     00eah     00eah    0000h      LOCAL    0         _Init_clock (E:\HT66F018_F12\main_new\INIT_HT66F018.OBJ)
+     00h     00e9h     00e9h    0001h      LOCAL    1         _clr_ram_en (E:\HT66F018_F12\main_new\INIT_HT66F018.OBJ)
+     00h     00e9h     00ech    0004h      LOCAL    2.75      _GPIOA_INIT (E:\HT66F018_F12\main_new\INIT_HT66F018.OBJ)
+     00h     00e9h     00ebh    0003h      LOCAL    3.3333    _GPIOB_INIT (E:\HT66F018_F12\main_new\INIT_HT66F018.OBJ)
+     00h     00e9h     00ebh    0003h      LOCAL    4         _GPIOC_INIT (E:\HT66F018_F12\main_new\INIT_HT66F018.OBJ)
+     00h     00ebh     00ebh    0001h      LOCAL    2         _init_TM1628 (E:\HT66F018_F12\main_new\TM1628.OBJ)
+     00h     00eah     00eah    0001h      LOCAL    2         _send_command (E:\HT66F018_F12\main_new\TM1628.OBJ)
+     00h     00e9h     00e9h    0001h      LOCAL    3         _send_8bit (E:\HT66F018_F12\main_new\TM1628.OBJ)
+     00h     00e9h     00e9h    0000h      LOCAL    0         _rtc_init (E:\HT66F018_F12\main_new\CLOCK_RUN.OBJ)
+     00h     00ebh     00ebh    0001h      LOCAL    4         _EEPROM_Init (E:\HT66F018_F12\main_new\EEPROM.OBJ)
+     00h     00e9h     00e9h    0001h      LOCAL    2         _EEPROM_Read_Byte (E:\HT66F018_F12\main_new\EEPROM.OBJ)
+     00h     00e9h     00eah    0002h      LOCAL    4.5       _EEPROM_Write_Byte (E:\HT66F018_F12\main_new\EEPROM.OBJ)
+     00h     00e9h     00e9h    0000h      LOCAL    0         _ADC_Init (E:\HT66F018_F12\main_new\INIT_HT66F018.OBJ)
+     00h     00e9h     00eah    0002h      LOCAL    19        _use_delay_us (E:\HT66F018_F12\main_new\RECORD_CONTROL.OBJ)
+     00h     00eah     00eah    0000h      LOCAL    0         _key_scan (E:\HT66F018_F12\main_new\KEYSCAN.OBJ)
+     00h     00e9h     00e9h    0001h      LOCAL    4         _ADC_GetChannelValue (E:\HT66F018_F12\main_new\INIT_HT66F018.OBJ)
+     00h     00ebh     00ech    0002h      LOCAL    2.5       _set_voice (E:\HT66F018_F12\main_new\RECORD_CONTROL.OBJ)
+     00h     00f7h     00fbh    0005h      LOCAL    2.8       _set_time (E:\HT66F018_F12\main_new\MENU.OBJ)
+     00h     00e9h     00edh    0005h      LOCAL    25.4      _builtin_holtek_divmodqi4_isr00 (E:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     00e9h     00e9h    0000h      LOCAL    0         _Crom2Prom (CROM2PROM)
+     00h     00ebh     00ech    0002h      LOCAL    21        _Write_DATA (E:\HT66F018_F12\main_new\TM1628.OBJ)
+     00h     00eeh     00f6h    0009h      LOCAL    7.8889    _set_val (E:\HT66F018_F12\main_new\MENU.OBJ)
+     00h     00ebh     00ebh    0000h      LOCAL    0         _time_save (E:\HT66F018_F12\main_new\CLOCK_RUN.OBJ)
+     00h     00f9h     00fdh    0005h      LOCAL    9         _set_meal (E:\HT66F018_F12\main_new\MENU.OBJ)
+     00h     00eeh     00f8h    000bh      LOCAL    4.2727    _get_meal (E:\HT66F018_F12\main_new\MENU.OBJ)
+     00h     00e9h     00e9h    0001h      LOCAL    3         _UART_SoftWareSendByte (E:\HT66F018_F12\main_new\INIT_HT66F018.OBJ)
+     00h     00eeh     00eeh    0000h      LOCAL    0         _rtc_lcd (E:\HT66F018_F12\main_new\LCD.OBJ)
+     00h     00eeh     00f3h    0006h      LOCAL    4.5       _feed_scan (E:\HT66F018_F12\main_new\FEED.OBJ)
+     00h     00f4h     00f6h    0003h      LOCAL    2.6667    _feed_run (E:\HT66F018_F12\main_new\FEED.OBJ)
+     00h     00f0h     00f3h    0004h      LOCAL    4.75      _motor (E:\HT66F018_F12\main_new\MOTOR.OBJ)
+     00h     00ebh     00efh    0005h      LOCAL    4.8       _motor_run (E:\HT66F018_F12\main_new\MOTOR.OBJ)
+     00h     00eah     00eah    0000h      LOCAL    0         _battery_detect (E:\HT66F018_F12\main_new\VOLTAGE.OBJ)
+     00h     00e9h     00e9h    0000h      LOCAL    0         @dummy12 (E:\HT66F018_F12\main_new\MAIN.OBJ)
+     00h     00e9h     00e9h    0000h      LOCAL    0         _Timer0_ISR (E:\HT66F018_F12\main_new\MAIN.OBJ)
+     00h     00e9h     00e9h    0000h      LOCAL    0         @dummy16 (E:\HT66F018_F12\main_new\MAIN.OBJ)
+     00h     00e9h     00e9h    0000h      LOCAL    0         _Timer1_2_ISR (E:\HT66F018_F12\main_new\MAIN.OBJ)
+
+     Public Symbols Information
+     Address            Public by Name
+     026bh              _ADC_GetChannelValue
+     0018h              _ADC_ISR
+     0265h              _ADC_Init
+     0008h              _COMP_ISR
+     0999h              _Crom2Prom
+     0999h              _Crom2PromNext
+     0255h              _EEPROM_Init
+     0245h              _EEPROM_Read_Byte
+     022fh              _EEPROM_Write_Byte
+     00e9h              _EEPROM_Write_Byte_2
+     0298h              _GPIOA_INIT
+     00ech              _GPIOA_INIT_2
+     02b1h              _GPIOB_INIT
+     02cah              _GPIOC_INIT
+     0004h              _INT0_ISR
+     0024h              _INT1_ISR
+     02f2h              _Init_clock
+     0014h              _LVD_EEPROM_ISR
+     001ch              _TB0_ISR
+     0020h              _TB1_ISR
+     0164h              _Timer0_ISR
+     0209h              _Timer1_2_ISR
+     031dh              _UART_SoftWareSendByte
+     03aah              _Write_DATA
+     0979h              __DELAYX0
+     0978h              __DELAYX1
+     0978h              __DELAYX2
+     0977h              __DELAYX3
+     0977h              __DELAYX4
+     0976h              __DELAYX5
+     0976h              __DELAYX6
+     0966h              _battery_detect
+     0980h              _builtin_holtek_udivmodqi4_isr00
+     02e3h              _clr_ram_en
+     00b8h              _col_staus
+     00afh              _feed
+     00ach              _feed_detect_again
+     00dbh              _feed_error
+     00bdh              _feed_going
+     00beh              _feed_plans
+     0809h              _feed_run
+     0832h              _feed_scan
+     0656h              _get_meal
+     03b4h              _init_TM1628
+     00b9h              _key_flag
+     03c5h              _key_scan
+     00b3h              _lcd_timeout
+     00aeh              _led_flag
+     0073h              _main
+     00aah              _meal_flag
+     090ah              _motor
+     08beh              _motor_run
+     00adh              _record_flag
+     00b5h              _rtc_date
+     021eh              _rtc_init
+     0332h              _rtc_lcd
+     0395h              _send_8bit
+     03a4h              _send_command
+     0743h              _set_meal
+     00bah              _set_meal_flag
+     05cah              _set_time
+     00bbh              _set_time_flag
+     0426h              _set_val
+     00eeh              _set_val_2
+     00bch              _set_val_flag
+     0891h              _set_voice
+     00d9h              _task_run_led
+     00dah              _task_run_motor
+     0222h              _time_save
+     00abh              _time_save_flag
+     0883h              _use_delay_us
+     00d8h              _user_delay_flag
+     00d6h              _user_delay_time
+     00dch              _voltage_low
+     00e2h              r10c
+     00e7h              r110
+     00e3h              r20c
+     00e8h              r210
+     00ddh              ra
+     00e6h              ra0c
+     00deh              rb
+     00e4h              rb0c
+     00dfh              rc
+     00e5h              rc0c
+     00e0h              rd
+     00e1h              re
+     0045h              startup_value_1
+
+     Address            Public by Value
+     0004h              _INT0_ISR
+     0008h              _COMP_ISR
+     0014h              _LVD_EEPROM_ISR
+     0018h              _ADC_ISR
+     001ch              _TB0_ISR
+     0020h              _TB1_ISR
+     0024h              _INT1_ISR
+     0045h              startup_value_1
+     0073h              _main
+     00aah              _meal_flag
+     00abh              _time_save_flag
+     00ach              _feed_detect_again
+     00adh              _record_flag
+     00aeh              _led_flag
+     00afh              _feed
+     00b3h              _lcd_timeout
+     00b5h              _rtc_date
+     00b8h              _col_staus
+     00b9h              _key_flag
+     00bah              _set_meal_flag
+     00bbh              _set_time_flag
+     00bch              _set_val_flag
+     00bdh              _feed_going
+     00beh              _feed_plans
+     00d6h              _user_delay_time
+     00d8h              _user_delay_flag
+     00d9h              _task_run_led
+     00dah              _task_run_motor
+     00dbh              _feed_error
+     00dch              _voltage_low
+     00ddh              ra
+     00deh              rb
+     00dfh              rc
+     00e0h              rd
+     00e1h              re
+     00e2h              r10c
+     00e3h              r20c
+     00e4h              rb0c
+     00e5h              rc0c
+     00e6h              ra0c
+     00e7h              r110
+     00e8h              r210
+     00e9h              _EEPROM_Write_Byte_2
+     00ech              _GPIOA_INIT_2
+     00eeh              _set_val_2
+     0164h              _Timer0_ISR
+     0209h              _Timer1_2_ISR
+     021eh              _rtc_init
+     0222h              _time_save
+     022fh              _EEPROM_Write_Byte
+     0245h              _EEPROM_Read_Byte
+     0255h              _EEPROM_Init
+     0265h              _ADC_Init
+     026bh              _ADC_GetChannelValue
+     0298h              _GPIOA_INIT
+     02b1h              _GPIOB_INIT
+     02cah              _GPIOC_INIT
+     02e3h              _clr_ram_en
+     02f2h              _Init_clock
+     031dh              _UART_SoftWareSendByte
+     0332h              _rtc_lcd
+     0395h              _send_8bit
+     03a4h              _send_command
+     03aah              _Write_DATA
+     03b4h              _init_TM1628
+     03c5h              _key_scan
+     0426h              _set_val
+     05cah              _set_time
+     0656h              _get_meal
+     0743h              _set_meal
+     0809h              _feed_run
+     0832h              _feed_scan
+     0883h              _use_delay_us
+     0891h              _set_voice
+     08beh              _motor_run
+     090ah              _motor
+     0966h              _battery_detect
+     0976h              __DELAYX6
+     0976h              __DELAYX5
+     0977h              __DELAYX4
+     0977h              __DELAYX3
+     0978h              __DELAYX2
+     0978h              __DELAYX1
+     0979h              __DELAYX0
+     0980h              _builtin_holtek_udivmodqi4_isr00
+     0999h              _Crom2PromNext
+     0999h              _Crom2Prom
+
+
+ROM Usage Statistics
+     Size      Used     Percentage
+     1000h     0994h    59%
+
+RAM Usage Statistics
+    Bank      Size      Used     Percentage
+     00h       0060h     0060h    100%
+     01h       0060h     0000h    0%
+     Total     00c0h     0060h    50%
+
+Use Stack Count
+_main: 5
+_Timer0_ISR: 0
+_Timer1_2_ISR: 0
+_Delay_ms: 1
+
+Call Tree
+    @dummy
+        _main (0)
+            __DELAYX (1)
+            _Init_clock (1)
+                _clr_ram_en (2)
+            _GPIOA_INIT (1)
+            _GPIOB_INIT (1)
+            _GPIOC_INIT (1)
+            _init_TM1628 (1)
+                _send_command (2)
+                    _send_8bit (3)
+                _send_8bit (2)
+            _rtc_init (1)
+            _EEPROM_Init (1)
+                _EEPROM_Read_Byte (2)
+                _EEPROM_Write_Byte (2)
+            _EEPROM_Read_Byte (1)
+            _ADC_Init (1)
+            _use_delay_us (1)
+            _key_scan (1)
+                _ADC_GetChannelValue (2)
+            _set_voice (1)
+                _use_delay_us (2)
+            _set_time (1)
+                _builtin_holtek_divmodqi4_isr00 (2)
+                _Crom2Prom (2)
+                _Write_DATA (2)
+                    _send_command (3)
+                        _send_8bit (4)
+                    _send_8bit (3)
+                _set_val (2)
+                    _key_scan (3)
+                        _ADC_GetChannelValue (4)
+                    _builtin_holtek_divmodqi4_isr00 (3)
+                    _Crom2Prom (3)
+                    _Write_DATA (3)
+                        _send_command (4)
+                            _send_8bit (5)
+                        _send_8bit (4)
+                    _use_delay_us (3)
+                _time_save (2)
+                    _EEPROM_Write_Byte (3)
+            _set_meal (1)
+                _get_meal (2)
+                    _EEPROM_Read_Byte (3)
+                    _Crom2Prom (3)
+                    _Write_DATA (3)
+                        _send_command (4)
+                            _send_8bit (5)
+                        _send_8bit (4)
+                    _builtin_holtek_divmodqi4_isr00 (3)
+                _set_val (2)
+                    _key_scan (3)
+                        _ADC_GetChannelValue (4)
+                    _builtin_holtek_divmodqi4_isr00 (3)
+                    _Crom2Prom (3)
+                    _Write_DATA (3)
+                        _send_command (4)
+                            _send_8bit (5)
+                        _send_8bit (4)
+                    _use_delay_us (3)
+                _Crom2Prom (2)
+                _EEPROM_Write_Byte (2)
+            _UART_SoftWareSendByte (1)
+                __DELAYX (2)
+            _get_meal (1)
+                _EEPROM_Read_Byte (2)
+                _Crom2Prom (2)
+                _Write_DATA (2)
+                    _send_command (3)
+                        _send_8bit (4)
+                    _send_8bit (3)
+                _builtin_holtek_divmodqi4_isr00 (2)
+            _rtc_lcd (1)
+                _builtin_holtek_divmodqi4_isr00 (2)
+                _Crom2Prom (2)
+                _Write_DATA (2)
+                    _send_command (3)
+                        _send_8bit (4)
+                    _send_8bit (3)
+            _time_save (1)
+                _EEPROM_Write_Byte (2)
+            _feed_scan (1)
+                _EEPROM_Read_Byte (2)
+                _rtc_lcd (2)
+                    _builtin_holtek_divmodqi4_isr00 (3)
+                    _Crom2Prom (3)
+                    _Write_DATA (3)
+                        _send_command (4)
+                            _send_8bit (5)
+                        _send_8bit (4)
+            _feed_run (1)
+                _Crom2Prom (2)
+                _motor (2)
+                    _motor_run (3)
+                        _use_delay_us (4)
+                    _Crom2Prom (3)
+                    _use_delay_us (3)
+            _battery_detect (1)
+                _ADC_GetChannelValue (2)
+    @dummy12
+        _Timer0_ISR (0)
+    @dummy16
+        _Timer1_2_ISR (0)
+    _Delay_ms
+        _builtin_holtek_delay_isr00 (0)
+
+HLINK : 程序的开始执行点在程序段'@code'（地址0）。定义在'E:\HT66F018_F12\main_new\MAIN.OBJ' 文件中
+
+错误总数 : 0  警告总数 : 0

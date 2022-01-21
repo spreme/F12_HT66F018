@@ -1,0 +1,347 @@
+
+连接器　版本8.7.7.211123
+Input Object File: e:\f12-ht66f018\adc_polling\output\STARTUP1_L.OBJ
+Input Object File: e:\f12-ht66f018\adc_polling\output\HT8_ADC.OBJ
+Input Object File: e:\f12-ht66f018\adc_polling\output\HT8_SIMULATION_UART.OBJ
+Input Object File: e:\f12-ht66f018\adc_polling\output\MAIN.OBJ
+
+Input Library File: E:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB
+Input Library File: E:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\v3_tabrd_mrsc.lib
+
+
+     Bank    Start     End      Length     Class    AvgIns    Name
+     00h     0000h     0000h    0001h      CODE               @code (e:\f12-ht66f018\adc_polling\output\MAIN.OBJ)
+     00h     0001h     0005h    0005h      CODE               @crom (e:\f12-ht66f018\adc_polling\output\MAIN.OBJ)
+     00h     0006h     000bh    0006h      CODE               _ADC_Init (e:\f12-ht66f018\adc_polling\output\HT8_ADC.OBJ)
+     00h     000ch     000fh    0004h      CODE               @isr_TM0_code (e:\f12-ht66f018\adc_polling\output\MAIN.OBJ)
+     00h     0010h     004ah    003bh      CODE               @start (e:\f12-ht66f018\adc_polling\output\MAIN.OBJ)
+     00h     004bh     0055h    000bh      CODE               @ROMDATA_BASE (e:\f12-ht66f018\adc_polling\output\STARTUP1_L.OBJ)
+     00h     0056h     0082h    002dh      CODE               _ADC_GetChannelValue (e:\f12-ht66f018\adc_polling\output\HT8_ADC.OBJ)
+     00h     0083h     0091h    000fh      CODE               _send_8bit (e:\f12-ht66f018\adc_polling\output\MAIN.OBJ)
+     00h     0092h     0097h    0006h      CODE               _send_command (e:\f12-ht66f018\adc_polling\output\MAIN.OBJ)
+     00h     0098h     00a1h    000ah      CODE               _Write_DATA (e:\f12-ht66f018\adc_polling\output\MAIN.OBJ)
+     00h     00a2h     00b2h    0011h      CODE               _init_TM1628 (e:\f12-ht66f018\adc_polling\output\MAIN.OBJ)
+     00h     00b3h     00cbh    0019h      CODE               _GPIOA_INIT (e:\f12-ht66f018\adc_polling\output\MAIN.OBJ)
+     00h     00cch     00e4h    0019h      CODE               _GPIOB_INIT (e:\f12-ht66f018\adc_polling\output\MAIN.OBJ)
+     00h     00e5h     00fdh    0019h      CODE               _GPIOC_INIT (e:\f12-ht66f018\adc_polling\output\MAIN.OBJ)
+     00h     00feh     010ch    000fh      CODE               _clr_ram_en (e:\f12-ht66f018\adc_polling\output\MAIN.OBJ)
+     00h     010dh     012bh    001fh      CODE               _Init_clock (e:\f12-ht66f018\adc_polling\output\MAIN.OBJ)
+     00h     012ch     0130h    0005h      CODE               _get_key_state (e:\f12-ht66f018\adc_polling\output\MAIN.OBJ)
+     00h     0131h     0288h    0158h      CODE               _key_scan (e:\f12-ht66f018\adc_polling\output\MAIN.OBJ)
+     00h     0289h     02b0h    0028h      CODE               _isr_TM0 (e:\f12-ht66f018\adc_polling\output\MAIN.OBJ)
+     00h     02b1h     0362h    00b2h      CODE               _main (e:\f12-ht66f018\adc_polling\output\MAIN.OBJ)
+     00h     0363h     036ch    000ah      CODE               __DELAYX (E:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     036dh     037ah    000eh      CODE               _builtin_holtek_delay_isr00 (E:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     037bh     039fh    0025h      CODE               _builtin_holtek_divmodhi4_isr00 (E:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     03a0h     03afh    0010h      CODE               _CROM2PROM (CROM2PROM)
+     00h     00a0h     00afh    0010h      DATA     3.9375    @HCCINIT (e:\f12-ht66f018\adc_polling\output\MAIN.OBJ)
+     00h     00b0h     00e3h    0034h      DATA     0.1730    @HCCINIT0 (e:\f12-ht66f018\adc_polling\output\MAIN.OBJ)
+     00h     00e4h     00e4h    0001h      DATA     25        @data_ra (E:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     00e5h     00e5h    0001h      DATA     25        @data_rb (E:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     00e6h     00e6h    0001h      DATA     20        @data_rc (E:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     00e7h     00e7h    0001h      DATA     4         @data_rd (E:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     00e8h     00e8h    0001h      DATA     4         @data_re (E:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     00e9h     00e9h    0001h      DATA     21        @data_rd0c (isr:ra~rh)
+     00h     00eah     00eah    0001h      DATA     21        @data_re0c (isr:ra~rh)
+     00h     00ebh     00ebh    0001h      DATA     28        @data_rb0c (isr:ra~rh)
+     00h     00ech     00ech    0001h      DATA     28        @data_rc0c (isr:ra~rh)
+     00h     00edh     00edh    0001h      DATA     2         @data_r10c (isr:ra~rh)
+     00h     00eeh     00eeh    0001h      DATA     2         @data_r20c (isr:ra~rh)
+     00h     00efh     00efh    0001h      DATA     2         @data_r30c (isr:ra~rh)
+     00h     00f0h     00f0h    0001h      DATA     2         @data_r40c (isr:ra~rh)
+     00h     00f1h     00f1h    0001h      DATA     2         @data_r50c (isr:ra~rh)
+     00h     00f2h     00f2h    0001h      DATA     2         @data_r60c (isr:ra~rh)
+     00h     00f3h     00f3h    0001h      DATA     2         @data_r70c (isr:ra~rh)
+
+     Local Sections
+
+     Bank    Start     End      Length     Class    AvgIns    Name
+     00h     00f6h     00f6h    0000h      LOCAL    0         @dummy12 (e:\f12-ht66f018\adc_polling\output\MAIN.OBJ)
+     00h     00f6h     00f6h    0000h      LOCAL    0         _isr_TM0 (e:\f12-ht66f018\adc_polling\output\MAIN.OBJ)
+     00h     00f5h     00f5h    0001h      LOCAL    15        _key_scan (e:\f12-ht66f018\adc_polling\output\MAIN.OBJ)
+     00h     00f5h     00f5h    0000h      LOCAL    0         _get_key_state (e:\f12-ht66f018\adc_polling\output\MAIN.OBJ)
+     00h     00f4h     00f4h    0001h      LOCAL    4         _ADC_GetChannelValue (e:\f12-ht66f018\adc_polling\output\HT8_ADC.OBJ)
+     00h     00feh     00feh    0000h      LOCAL    0         @dummy (e:\f12-ht66f018\adc_polling\output\MAIN.OBJ)
+     00h     00feh     00ffh    0002h      LOCAL    6         _main (e:\f12-ht66f018\adc_polling\output\MAIN.OBJ)
+     00h     00f6h     00f6h    0000h      LOCAL    0         __DELAYX (E:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     00f7h     00f7h    0000h      LOCAL    0         _Init_clock (e:\f12-ht66f018\adc_polling\output\MAIN.OBJ)
+     00h     00f6h     00f6h    0001h      LOCAL    1         _clr_ram_en (e:\f12-ht66f018\adc_polling\output\MAIN.OBJ)
+     00h     00f6h     00f9h    0004h      LOCAL    2.75      _GPIOA_INIT (e:\f12-ht66f018\adc_polling\output\MAIN.OBJ)
+     00h     00f6h     00f8h    0003h      LOCAL    3.3333    _GPIOB_INIT (e:\f12-ht66f018\adc_polling\output\MAIN.OBJ)
+     00h     00f6h     00f8h    0003h      LOCAL    4         _GPIOC_INIT (e:\f12-ht66f018\adc_polling\output\MAIN.OBJ)
+     00h     00f8h     00f8h    0001h      LOCAL    2         _init_TM1628 (e:\f12-ht66f018\adc_polling\output\MAIN.OBJ)
+     00h     00f7h     00f7h    0001h      LOCAL    2         _send_command (e:\f12-ht66f018\adc_polling\output\MAIN.OBJ)
+     00h     00f6h     00f6h    0001h      LOCAL    3         _send_8bit (e:\f12-ht66f018\adc_polling\output\MAIN.OBJ)
+     00h     00f6h     00f6h    0000h      LOCAL    0         _ADC_Init (e:\f12-ht66f018\adc_polling\output\HT8_ADC.OBJ)
+     00h     00f6h     00f6h    0001h      LOCAL    4         _builtin_holtek_delay_isr00 (E:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     00f6h     00fdh    0008h      LOCAL    8.625     _builtin_holtek_divmodhi4_isr00 (E:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     00f6h     00f6h    0000h      LOCAL    0         _Crom2Prom (CROM2PROM)
+     00h     00f8h     00f9h    0002h      LOCAL    5         _Write_DATA (e:\f12-ht66f018\adc_polling\output\MAIN.OBJ)
+
+     Public Symbols Information
+     Address            Public by Name
+     0056h              _ADC_GetChannelValue
+     0006h              _ADC_Init
+     03a0h              _Crom2Prom
+     03a0h              _Crom2PromNext
+     00b3h              _GPIOA_INIT
+     00cch              _GPIOB_INIT
+     00e5h              _GPIOC_INIT
+     010dh              _Init_clock
+     0098h              _Write_DATA
+     00f8h              _Write_DATA_2
+     0366h              __DELAYX0
+     0365h              __DELAYX1
+     0365h              __DELAYX2
+     0364h              __DELAYX3
+     0364h              __DELAYX4
+     0363h              __DELAYX5
+     0363h              __DELAYX6
+     036fh              __DELAYY0_isr00
+     036fh              __DELAYY1_isr00
+     036eh              __DELAYY2_isr00
+     036eh              __DELAYY3_isr00
+     036dh              __DELAYY4_isr00
+     036dh              __DELAYY5_isr00
+     00dch              _alarm_hour
+     00dbh              _alarm_min
+     00dah              _alarm_second
+     00b0h              _bBbSound
+     00b1h              _bbCnt
+     00b4h              _bbRam
+     00b2h              _bbTime
+     00d4h              _bj_min
+     00d3h              _bj_second
+     037bh              _builtin_holtek_udivmodhi4_isr00
+     00fah              _builtin_holtek_udivmodhi4_isr00_2
+     00feh              _clr_ram_en
+     00cah              _data
+     00abh              _down_key_tick
+     00a5h              _feed_key_tick
+     012ch              _get_key_state
+     00a2h              _init_TM1628
+     0289h              _isr_TM0
+     00afh              _key_flag
+     00a0h              _key_flag_1
+     0131h              _key_scan
+     00c5h              _keystep
+     02b1h              _main
+     00beh              _num1
+     00bdh              _num2
+     00bbh              _num3
+     00b9h              _num4
+     00b8h              _num5
+     00b7h              _num6
+     00b6h              _num7
+     00b5h              _num8
+     00d9h              _peking_hour
+     00d8h              _peking_min
+     00d5h              _peking_min1
+     00d7h              _peking_second
+     00d6h              _peking_second1
+     00a1h              _play_key_tick
+     00a3h              _record_key_tick
+     0083h              _send_8bit
+     0092h              _send_command
+     00a9h              _set_key_tick
+     00c9h              _step
+     00c8h              _step1
+     00c7h              _step2
+     00c6h              _step3
+     00c2h              _sum
+     00c0h              _sum1
+     00cch              _t10s
+     00cbh              _t2s
+     00a7h              _time_key_tick
+     00d1h              _tms
+     00d0h              _tms1
+     00cfh              _tms2
+     00ceh              _tms3
+     00cdh              _tms4
+     00e3h              _uF1
+     00e2h              _uF2
+     00e1h              _uF3
+     00e0h              _uF4
+     00dfh              _uF5
+     00deh              _uF6
+     00ddh              _uF7
+     00adh              _up_key_tick
+     00c4h              _value
+     00bfh              _wei
+     00edh              r10c
+     00eeh              r20c
+     00efh              r30c
+     00f0h              r40c
+     00f1h              r50c
+     00f2h              r60c
+     00f3h              r70c
+     00e4h              ra
+     00e5h              rb
+     00ebh              rb0c
+     00e6h              rc
+     00ech              rc0c
+     00e7h              rd
+     00e9h              rd0c
+     00e8h              re
+     00eah              re0c
+     004bh              startup_value_1
+
+     Address            Public by Value
+     0006h              _ADC_Init
+     004bh              startup_value_1
+     0056h              _ADC_GetChannelValue
+     0083h              _send_8bit
+     0092h              _send_command
+     0098h              _Write_DATA
+     00a0h              _key_flag_1
+     00a1h              _play_key_tick
+     00a2h              _init_TM1628
+     00a3h              _record_key_tick
+     00a5h              _feed_key_tick
+     00a7h              _time_key_tick
+     00a9h              _set_key_tick
+     00abh              _down_key_tick
+     00adh              _up_key_tick
+     00afh              _key_flag
+     00b0h              _bBbSound
+     00b1h              _bbCnt
+     00b2h              _bbTime
+     00b3h              _GPIOA_INIT
+     00b4h              _bbRam
+     00b5h              _num8
+     00b6h              _num7
+     00b7h              _num6
+     00b8h              _num5
+     00b9h              _num4
+     00bbh              _num3
+     00bdh              _num2
+     00beh              _num1
+     00bfh              _wei
+     00c0h              _sum1
+     00c2h              _sum
+     00c4h              _value
+     00c5h              _keystep
+     00c6h              _step3
+     00c7h              _step2
+     00c8h              _step1
+     00c9h              _step
+     00cah              _data
+     00cbh              _t2s
+     00cch              _GPIOB_INIT
+     00cch              _t10s
+     00cdh              _tms4
+     00ceh              _tms3
+     00cfh              _tms2
+     00d0h              _tms1
+     00d1h              _tms
+     00d3h              _bj_second
+     00d4h              _bj_min
+     00d5h              _peking_min1
+     00d6h              _peking_second1
+     00d7h              _peking_second
+     00d8h              _peking_min
+     00d9h              _peking_hour
+     00dah              _alarm_second
+     00dbh              _alarm_min
+     00dch              _alarm_hour
+     00ddh              _uF7
+     00deh              _uF6
+     00dfh              _uF5
+     00e0h              _uF4
+     00e1h              _uF3
+     00e2h              _uF2
+     00e3h              _uF1
+     00e4h              ra
+     00e5h              rb
+     00e5h              _GPIOC_INIT
+     00e6h              rc
+     00e7h              rd
+     00e8h              re
+     00e9h              rd0c
+     00eah              re0c
+     00ebh              rb0c
+     00ech              rc0c
+     00edh              r10c
+     00eeh              r20c
+     00efh              r30c
+     00f0h              r40c
+     00f1h              r50c
+     00f2h              r60c
+     00f3h              r70c
+     00f8h              _Write_DATA_2
+     00fah              _builtin_holtek_udivmodhi4_isr00_2
+     00feh              _clr_ram_en
+     010dh              _Init_clock
+     012ch              _get_key_state
+     0131h              _key_scan
+     0289h              _isr_TM0
+     02b1h              _main
+     0363h              __DELAYX6
+     0363h              __DELAYX5
+     0364h              __DELAYX4
+     0364h              __DELAYX3
+     0365h              __DELAYX2
+     0365h              __DELAYX1
+     0366h              __DELAYX0
+     036dh              __DELAYY5_isr00
+     036dh              __DELAYY4_isr00
+     036eh              __DELAYY3_isr00
+     036eh              __DELAYY2_isr00
+     036fh              __DELAYY1_isr00
+     036fh              __DELAYY0_isr00
+     037bh              _builtin_holtek_udivmodhi4_isr00
+     03a0h              _Crom2PromNext
+     03a0h              _Crom2Prom
+
+
+ROM Usage Statistics
+     Size      Used     Percentage
+     1000h     03b0h    23%
+
+RAM Usage Statistics
+    Bank      Size      Used     Percentage
+     00h       0060h     0060h    100%
+     01h       0060h     0000h    0%
+     Total     00c0h     0060h    50%
+
+Use Stack Count
+_UART_SoftWareSendByte: 1
+_Delay_ms: 1
+_isr_TM0: 3
+_main: 3
+
+Call Tree
+    _UART_SoftWareSendByte
+        __DELAYX (0)
+    _Delay_ms
+        _builtin_holtek_delay_isr00 (0)
+    @dummy12
+        _isr_TM0 (0)
+            _key_scan (1)
+                _get_key_state (2)
+                    _ADC_GetChannelValue (3)
+    @dummy
+        _main (0)
+            __DELAYX (1)
+            _Init_clock (1)
+                _clr_ram_en (2)
+            _GPIOA_INIT (1)
+            _GPIOB_INIT (1)
+            _GPIOC_INIT (1)
+            _init_TM1628 (1)
+                _send_command (2)
+                    _send_8bit (3)
+                _send_8bit (2)
+            _ADC_Init (1)
+            _builtin_holtek_delay_isr00 (1)
+            _ADC_GetChannelValue (1)
+            _builtin_holtek_divmodhi4_isr00 (1)
+            _Crom2Prom (1)
+            _Write_DATA (1)
+                _send_command (2)
+                    _send_8bit (3)
+                _send_8bit (2)
+
+HLINK : 程序的开始执行点在程序段'@code'（地址0）。定义在'e:\f12-ht66f018\adc_polling\output\MAIN.OBJ' 文件中
+
+错误总数 : 0  警告总数 : 0
